@@ -1,0 +1,17 @@
+# Стек для Portainer: CV-сайт на хосте :8350.
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: valenchitscv:latest
+    container_name: valenchitscv
+    ports:
+      - "8350:80"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

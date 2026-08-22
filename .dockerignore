@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-ssr
+.git
+.idea
+.vscode
+.cursor
+*.local
+*.log
+npm-debug.log*
+README.md
+info.md
+.DS_Store
