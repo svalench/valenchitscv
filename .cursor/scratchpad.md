@@ -1,4 +1,5 @@
-# Yandex.Metrika
+# Docker deploy fix
 
-- Добавлен счётчик 112092506 в index.html
+- Причина: package-lock.json ссылался на npm.mirrors.msh.team (недоступно на сервере)
+- Исправлено: все resolved → registry.npmjs.org, добавлен .npmrc
 - DONE
