@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { useLang, langNames, type Lang } from '../i18n'
+import { languagePaths } from '../locales'
 
 const langs: Lang[] = ['be', 'en', 'ru']
 
 export default function Header() {
-  const { lang, setLang, t } = useLang()
+  const { lang, t } = useLang()
   const [open, setOpen] = useState(false)
 
   const items = [
@@ -33,7 +34,7 @@ export default function Header() {
               <a
                 key={href}
                 href={href}
-                className="text-[13px] font-medium text-white/55 transition-colors hover:text-[#ff5a1f]"
+                className="text-[13px] font-medium text-white/75 transition-colors hover:text-[#ff5a1f]"
               >
                 {label}
               </a>
@@ -43,15 +44,15 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <div className="flex rounded-full border border-white/10 bg-white/5 p-1">
               {langs.map((l) => (
-                <button
+                <a
                   key={l}
-                  onClick={() => setLang(l)}
+                  href={languagePaths[l]} hrefLang={l} lang={l} aria-current={lang === l ? 'page' : undefined}
                   className={`rounded-full px-2.5 py-1 font-mono2 text-[11px] font-medium transition-all ${
-                    lang === l ? 'accent-gradient text-black' : 'text-white/50 hover:text-white'
+                    lang === l ? 'accent-gradient text-black' : 'text-white/75 hover:text-white'
                   }`}
                 >
                   {langNames[l]}
-                </button>
+                </a>
               ))}
             </div>
             <button

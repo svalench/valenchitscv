@@ -12,19 +12,19 @@ export interface ProjectMeta {
   url: string
   pypi?: string
   product?: string
-  stars: number
   language: string
   featured?: boolean
 }
 
 export const projectsMeta: ProjectMeta[] = [
-  { name: 'EchoLang', url: 'https://echolang.io/', product: 'iOS App', stars: 0, language: 'Swift · iOS', featured: true },
-  { name: 'fastapi-viewsets', url: 'https://github.com/svalench/fastapi_viewsets', pypi: 'https://pypi.org/project/fastapi-viewsets/', stars: 4, language: 'Python', featured: true },
-  { name: 'django-graph-search', url: 'https://github.com/svalench/django_graph_search', pypi: 'https://pypi.org/project/django-graph-search/', stars: 3, language: 'Python', featured: true },
-  { name: 'llm-cache-router', url: 'https://github.com/svalench/llm-cache-router', pypi: 'https://pypi.org/project/llm-cache-router/', stars: 2, language: 'Python', featured: true },
-  { name: 'testcaseer', url: 'https://github.com/svalench/testcaseer', stars: 2, language: 'Python' },
-  { name: 'pgadmin-ai-gateway', url: 'https://github.com/svalench/pgadmin-ai-gateway', stars: 0, language: 'Python' },
-  { name: 'pythonSiemens', url: 'https://github.com/svalench/pythonSiemens', stars: 0, language: 'Python' },
+  { name: 'AIScanAuto', url: 'https://aiscanauto.com/', product: 'AI product', language: 'AI · OBD-II', featured: true },
+  { name: 'EchoLang', url: 'https://echolang.io/', product: 'iOS App', language: 'Swift · iOS', featured: true },
+  { name: 'fastapi-viewsets', url: 'https://github.com/svalench/fastapi_viewsets', pypi: 'https://pypi.org/project/fastapi-viewsets/', language: 'Python', featured: true },
+  { name: 'django-graph-search', url: 'https://github.com/svalench/django_graph_search', pypi: 'https://pypi.org/project/django-graph-search/', language: 'Python', featured: true },
+  { name: 'llm-cache-router', url: 'https://github.com/svalench/llm-cache-router', pypi: 'https://pypi.org/project/llm-cache-router/', language: 'Python', featured: true },
+  { name: 'testcaseer', url: 'https://github.com/svalench/testcaseer', language: 'Python' },
+  { name: 'pgadmin-ai-gateway', url: 'https://github.com/svalench/pgadmin-ai-gateway', language: 'Python' },
+  { name: 'pythonSiemens', url: 'https://github.com/svalench/pythonSiemens', language: 'Python' },
 ]
 
 export interface Article {

@@ -27,14 +27,14 @@ export default function Experience() {
                   <h3 className="font-display text-xl font-bold text-white md:text-2xl">{job.company}</h3>
                   <p className="mt-1 text-sm font-medium text-[#ff5a1f]">{job.role}</p>
                 </div>
-                <span className="rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 font-mono2 text-xs text-white/60">
+                <span className="rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 font-mono2 text-xs text-white/75">
                   {job.period}
                 </span>
               </div>
 
               <ul className="mt-5 space-y-2.5">
                 {job.bullets.map((b, i) => (
-                  <li key={i} className="flex gap-3 text-[14px] leading-relaxed text-white/60">
+                  <li key={i} className="flex gap-3 text-[14px] leading-relaxed text-white/75">
                     <span className="mt-[9px] h-1 w-1 shrink-0 rounded-full bg-[#ff5a1f]" />
                     {b}
                   </li>
@@ -43,7 +43,7 @@ export default function Experience() {
 
               <div className="mt-6 flex flex-wrap gap-2">
                 {job.tags.map((tag) => (
-                  <span key={tag} className="rounded-md bg-white/5 px-2.5 py-1 font-mono2 text-[11px] text-white/50">
+                  <span key={tag} className="rounded-md bg-white/5 px-2.5 py-1 font-mono2 text-[11px] text-white/75">
                     {tag}
                   </span>
                 ))}

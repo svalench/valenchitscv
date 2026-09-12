@@ -1,4 +1,4 @@
-import { LanguageProvider } from '../i18n'
+import { LanguageProvider, type Lang } from '../i18n'
 import { useRevealRoot } from '../hooks/useReveal'
 import Header from '../sections/Header'
 import BackgroundFX from '../sections/BackgroundFX'
@@ -35,9 +35,9 @@ function Page() {
   )
 }
 
-export default function Home() {
+export default function Home({ lang = 'en' }: { lang?: Lang }) {
   return (
-    <LanguageProvider>
+    <LanguageProvider lang={lang}>
       <Page />
     </LanguageProvider>
   )

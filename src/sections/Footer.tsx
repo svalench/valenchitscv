@@ -9,7 +9,7 @@ export default function Footer() {
           <span className="accent-gradient flex h-7 w-7 items-center justify-center rounded-md font-display text-xs font-bold text-black">
             AV
           </span>
-          <span className="text-[13px] text-white/50">{t.footer.rights}</span>
+          <span className="text-[13px] text-white/75">{t.footer.rights}</span>
         </div>
         <span className="font-mono2 text-[11px] text-white/30">{t.footer.built}</span>
       </div>

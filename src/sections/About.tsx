@@ -12,7 +12,7 @@ export default function About() {
         {/* photo */}
         <div className="reveal relative">
           <div className="overflow-hidden rounded-3xl border border-white/10">
-            <img src="/img/about.jpg" alt="Alexander Valenchits" className="aspect-square w-full object-cover object-top" />
+            <img src="/img/about.jpg" loading="lazy" alt="Alexander Valenchits" className="aspect-square w-full object-cover object-top" />
             <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-t from-black/40 to-transparent" />
           </div>
           <div className="absolute -bottom-4 left-6 rounded-2xl border border-white/10 bg-[#141418]/85 px-5 py-3 shadow-2xl backdrop-blur-md">
@@ -22,8 +22,8 @@ export default function About() {
         </div>
 
         <div>
-          <p className="reveal text-[15px] leading-relaxed text-white/65">{t.about.p1}</p>
-          <p className="reveal mt-5 text-[15px] leading-relaxed text-white/65">{t.about.p2}</p>
+          <p className="reveal text-[15px] leading-relaxed text-white/75">{t.about.p1}</p>
+          <p className="reveal mt-5 text-[15px] leading-relaxed text-white/75">{t.about.p2}</p>
 
           {/* interests */}
           <p className="reveal mt-9 mb-4 font-mono2 text-xs uppercase tracking-[0.25em] text-[#ff5a1f]">
@@ -49,7 +49,7 @@ export default function About() {
               <div key={l.name}>
                 <div className="mb-1.5 flex items-baseline justify-between">
                   <span className="text-sm font-medium text-white/85">{l.name}</span>
-                  <span className="text-xs text-white/40">{l.level}</span>
+                  <span className="text-xs text-white/75">{l.level}</span>
                 </div>
                 <div className="h-1.5 overflow-hidden rounded-full bg-white/10">
                   <div className="accent-gradient h-full rounded-full" style={{ width: `${l.pct}%` }} />

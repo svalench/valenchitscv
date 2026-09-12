@@ -114,8 +114,8 @@ body {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(28px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .reveal.is-visible {
@@ -217,3 +217,23 @@ body {
     animation: none;
   }
 }
+
+section { scroll-margin-top: 100px; }
+@media print {
+  @page { size: A4; margin: 15mm; }
+  html, body, #root, #root * { background: transparent !important; color: #111 !important; box-shadow: none !important; text-shadow: none !important; animation: none !important; }
+  header, button, #root img, .glow-orb, .bg-orb, .bg-grid, .bg-aurora, #writing, #stack, #about, #top > div:last-child { display: none !important; }
+  #root main, #root section, #root #top > div { padding: 0 !important; margin: 0 0 5mm !important; max-width: none !important; }
+  #root .grid { display: block !important; }
+  #root h1 { font-size: 26pt !important; line-height: 1.2 !important; }
+  #root h1 br { display: none; }
+  #root h1 span::before { content: ' '; }
+  #root h2 { font-size: 17pt !important; }
+  #root h3 { break-after: avoid; }
+  #root p, #root li, #root a { font-size: 10pt !important; }
+  #root .accent-text { -webkit-text-fill-color: #111; }
+  #root a { text-decoration: underline; }
+  #projects a { display: block; break-inside: avoid; padding: 3mm 0 !important; }
+  #projects a > div { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .pulse-dot { animation: none; } .reveal { transition: none; } }

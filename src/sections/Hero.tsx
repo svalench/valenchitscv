@@ -1,9 +1,10 @@
 import { ArrowUpRight, Github, MapPin } from 'lucide-react'
 import { useLang } from '../i18n'
+import { personNames } from '../locales'
 import { links } from '../data'
 
 export default function Hero() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
 
   return (
     <section id="top" className="relative overflow-hidden">
@@ -20,13 +21,13 @@ export default function Hero() {
 
           <p className="reveal mb-3 font-mono2 text-sm tracking-wide text-[#ff5a1f]">{t.hero.role}</p>
 
-          <h1 className="reveal font-display text-[13vw] font-bold leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-[86px]">
-            Alexander
+          <h1 className="reveal font-display text-[13vw] font-bold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-[72px]">
+            {personNames[lang].split(' ')[0]}
             <br />
-            <span className="accent-text">Valenchits</span>
+            <span className="accent-text">{personNames[lang].split(' ')[1]}</span>
           </h1>
 
-          <p className="reveal mt-6 max-w-xl text-[15px] leading-relaxed text-white/60">{t.hero.tagline}</p>
+          <p className="reveal mt-6 max-w-xl text-[15px] leading-relaxed text-white/75">{t.hero.tagline}</p>
 
           <div className="reveal mt-8 flex flex-wrap items-center gap-4">
             <a
@@ -47,7 +48,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="reveal mt-8 flex items-center gap-2 text-[13px] text-white/45">
+          <div className="reveal mt-8 flex items-center gap-2 text-[13px] text-white/75">
             <MapPin size={14} className="text-[#ff5a1f]" />
             {t.hero.location}
           </div>
@@ -57,7 +58,7 @@ export default function Hero() {
         <div className="reveal relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="relative overflow-hidden rounded-t-[28px] border border-b-0 border-white/10">
             <img
-              src="/img/hero.jpg"
+              src="/img/hero.jpg" fetchPriority="high"
               alt="Alexander Valenchits"
               className="hero-img-mask h-[460px] w-full object-cover object-top lg:h-[560px]"
             />
@@ -75,7 +76,7 @@ export default function Hero() {
           {t.stats.map((s, i) => (
             <div key={i} className="reveal px-5 py-7 first:pl-0">
               <div className="font-display text-4xl font-bold text-[#ff5a1f] lg:text-5xl">{s.value}</div>
-              <div className="mt-1.5 text-[13px] text-white/50">{s.label}</div>
+              <div className="mt-1.5 text-[13px] text-white/75">{s.label}</div>
             </div>
           ))}
         </div>

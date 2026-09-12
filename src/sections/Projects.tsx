@@ -1,4 +1,4 @@
-import { Star, ArrowUpRight, Package, Smartphone } from 'lucide-react'
+import { ArrowUpRight, Package, Smartphone } from 'lucide-react'
 import { useLang } from '../i18n'
 import { projectsMeta } from '../data'
 import SectionHead from './SectionHead'
@@ -11,8 +11,8 @@ export default function Projects() {
       <SectionHead label={t.projects.label} heading={t.projects.heading} sub={t.projects.sub} />
 
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {projectsMeta.map((meta, i) => {
-          const localized = t.projects.items[i]
+        {projectsMeta.map((meta) => {
+          const localized = t.projects.items.find((item) => item.name === meta.name)
           return (
             <a
               key={meta.name}
@@ -31,18 +31,13 @@ export default function Projects() {
                 </span>
                 <div className="flex items-center gap-2">
                   {meta.pypi && (
-                    <span className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-medium text-white/55">
+                    <span className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-medium text-white/75">
                       <Package size={11} /> PyPI
                     </span>
                   )}
                   {meta.product && (
-                    <span className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-medium text-white/55">
+                    <span className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-medium text-white/75">
                       <Smartphone size={11} /> {meta.product}
-                    </span>
-                  )}
-                  {!meta.product && (
-                    <span className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-white/55">
-                      <Star size={11} className="text-[#ffb37a]" /> {meta.stars}
                     </span>
                   )}
                 </div>
@@ -51,10 +46,10 @@ export default function Projects() {
               <h3 className="font-mono2 text-[15px] font-semibold text-white group-hover:text-[#ff8c42]">
                 {localized?.name ?? meta.name}
               </h3>
-              <p className="mt-2.5 flex-1 text-[13.5px] leading-relaxed text-white/55">{localized?.desc}</p>
+              <p className="mt-2.5 flex-1 text-[13.5px] leading-relaxed text-white/75">{localized?.desc}</p>
 
               <div className="mt-5 flex items-center justify-between">
-                <span className="flex items-center gap-1.5 text-[12px] text-white/40">
+                <span className="flex items-center gap-1.5 text-[12px] text-white/75">
                   <span className="h-2.5 w-2.5 rounded-full bg-[#3572A5]" />
                   {meta.language}
                 </span>

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, type ReactNode } from 'react'
+import { createContext, useContext, type ReactNode } from 'react'
 
 export type Lang = 'en' | 'ru' | 'be'
 
@@ -67,18 +67,17 @@ export interface Translation {
 }
 
 const en: Translation = {
-  nav: { about: 'About', experience: 'Experience', stack: 'Stack', projects: 'Open Source', writing: 'Writing', contact: 'Contact' },
+  nav: { about: 'About', experience: 'Experience', stack: 'Stack', projects: "Projects & Open Source", writing: 'Writing', contact: 'Contact' },
   hero: {
     badge: 'Open to work',
     role: 'Backend Tech Lead · AI Engineer · Open-Source Author',
-    tagline:
-      'Applied AI platforms and backend systems: Python, FastAPI, Django, Kubernetes, AI/LLM systems with vLLM, RAG and vector search, CI/CD. 10+ years of turning complex architecture into shipping products.',
+    tagline: "I build Python backends and applied AI products with FastAPI, Django and LLMs. Engineering since 2014; web development since 2021.",
     location: 'Minsk, Belarus · Open to relocation',
     ctaContact: 'Get in touch',
     ctaGithub: 'GitHub',
   },
   stats: [
-    { value: '10+', label: 'Years of experience' },
+    { value: '12+', label: 'Years in engineering' },
     { value: '20+', label: 'Public repositories' },
     { value: '3', label: 'PyPI packages' },
     { value: '10+', label: 'Technical articles' },
@@ -86,7 +85,7 @@ const en: Translation = {
   about: {
     label: 'About me',
     heading: 'Engineering leader who ships AI products',
-    p1: 'I’m a Tech Lead and AI Engineer with 10+ years of engineering experience — five years building software for industry, then five more in web development with Python and JavaScript (Vue). My path runs from industrial automation — at MVLab I wired Siemens PLCs, Linux servers and Python backends together on real factory floors — to modern AI-native products.',
+    p1: "Tech Lead and AI Engineer with an engineering career spanning electronics, industrial automation and software since 2014. Since 2021, I have focused on Python and JavaScript web development. At MVLab, I connected Siemens PLCs, Linux servers and Python backends on factory floors. Today I build backend systems and applied AI products.",
     p2: 'I run technical interviews and code reviews, and make architecture decisions grounded in domain-driven design. I value autonomy, measurable outcomes and a seat at the table when product decisions are made.',
     interestsLabel: 'What drives me',
     interests: ['Complex architecture', 'Model inference optimization', 'AI automation', 'Open source', 'Product thinking', 'Mentoring'],
@@ -109,7 +108,7 @@ const en: Translation = {
         bullets: [
           'Lead backend development of AI-native products: FastAPI/Django services with LLM integration (vLLM, Ollama), production AI agents and MCP integrations.',
           'Introduced CI/CD with smooth zero-downtime production deploys and unit-test coverage across services.',
-          'Led a domain-driven design restructuring of the entire landscape of the entrusted area.',
+          'Restructured backend services around domain boundaries using domain-driven design.',
           'Run technical interviews and code reviews; set backend engineering standards for the team.',
         ],
         tags: ['FastAPI', 'Django', 'vLLM', 'AI agents', 'MCP', 'CI/CD', 'DDD'],
@@ -132,7 +131,7 @@ const en: Translation = {
         current: true,
         bullets: [
           'Founded and built an AI car-diagnostics product: OBD-II data combined with a local LLM (Gemma) that explains fault codes in plain language.',
-          'Android app shipped; iOS version in development; core diagnostics work offline.',
+          'OBD-II diagnostics with AI explanations; see the product website for current platforms and downloads.',
         ],
         tags: ['LLM', 'Gemma', 'OBD-II', 'Mobile', 'Product'],
       },
@@ -179,12 +178,13 @@ const en: Translation = {
     ],
   },
   projects: {
-    label: 'Open source',
-    heading: 'Libraries & tools I build in public',
+    label: "Projects & Open Source",
+    heading: "Products, libraries & tools",
     sub: 'Production-grade open source and shipped AI products — published on GitHub and PyPI, in the App Store, written about on Medium and dev.to.',
     viewRepo: 'View repository',
     viewSite: 'Visit site',
     items: [
+      { name: 'AIScanAuto', desc: "AI car diagnostics combining OBD-II data with plain-language explanations. Platform availability and downloads on the product website." },
       { name: 'EchoLang', desc: 'Offline AI voice translator for iPhone — on-device Whisper speech recognition and TranslateGemma translation via MLX. 33 languages, no cloud, no accounts, fully private.' },
       { name: 'fastapi-viewsets', desc: 'DRF-style ViewSets for FastAPI — auto-generates CRUD endpoints from SQLAlchemy, Tortoise or Peewee models.' },
       { name: 'django-graph-search', desc: 'Production-ready semantic vector search for Django — traverses FK/M2M relations, RAG-ready, zero migrations.' },
@@ -211,18 +211,17 @@ const en: Translation = {
 }
 
 const ru: Translation = {
-  nav: { about: 'Обо мне', experience: 'Опыт', stack: 'Стек', projects: 'Open Source', writing: 'Статьи', contact: 'Контакты' },
+  nav: { about: 'Обо мне', experience: 'Опыт', stack: 'Стек', projects: "Проекты и Open Source", writing: 'Статьи', contact: 'Контакты' },
   hero: {
     badge: 'Открыт к предложениям',
     role: 'Backend Tech Lead · AI-инженер · автор open source',
-    tagline:
-      'Прикладные AI-платформы и backend-системы: Python, FastAPI, Django, Kubernetes, AI/LLM-системы на vLLM, RAG и vector search, CI/CD. Более 10 лет превращаю сложную архитектуру в работающие продукты.',
+    tagline: "Разрабатываю backend на Python и прикладные AI-продукты с FastAPI, Django и LLM. В инженерии с 2014 года, в веб-разработке — с 2021.",
     location: 'Минск, Беларусь · Готов к релокации',
     ctaContact: 'Связаться',
     ctaGithub: 'GitHub',
   },
   stats: [
-    { value: '10+', label: 'лет опыта' },
+    { value: '12+', label: 'лет в инженерии' },
     { value: '20+', label: 'публичных репозиториев' },
     { value: '3', label: 'пакета на PyPI' },
     { value: '10+', label: 'технических статей' },
@@ -230,7 +229,7 @@ const ru: Translation = {
   about: {
     label: 'Обо мне',
     heading: 'Инженерный лидер, который выпускает AI-продукты',
-    p1: 'Я — Tech Lead и AI-инженер с более чем 10-летним инженерным опытом: пять лет занимался разработкой ПО для промышленности, затем пять лет — веб-разработкой на Python и JavaScript (Vue). Мой путь — от промышленной автоматизации, где в MVLab я связывал PLC Siemens, Linux-серверы и Python-backend на реальном производстве, до современных AI-native продуктов.',
+    p1: "Tech Lead и AI-инженер. С 2014 года работаю в инженерии: электроника, промышленная автоматизация и программное обеспечение. С 2021 года специализируюсь на веб-разработке на Python и JavaScript. В MVLab связывал PLC Siemens, Linux-серверы и Python-backend на производстве; сейчас создаю backend-системы и прикладные AI-продукты.",
     p2: 'Провожу технические интервью и код-ревью, принимаю архитектурные решения на основе domain-driven design. Ценю автономию, измеримые результаты и участие в продуктовых решениях — а не просто закрытие тикетов.',
     interestsLabel: 'Что меня вдохновляет',
     interests: ['Сложная архитектура', 'Оптимизация инференса моделей', 'AI-автоматизация', 'Открытый код', 'Продуктовое мышление', 'Менторство'],
@@ -253,7 +252,7 @@ const ru: Translation = {
         bullets: [
           'Руковожу backend-разработкой AI-native продуктов: сервисы FastAPI/Django с интеграцией LLM (vLLM, Ollama), продакшн AI-агенты и MCP-интеграции.',
           'Внедрил CI/CD: плавный бесшовный деплой в продакшн без простоев и покрытие сервисов unit-тестами.',
-          'Провёл перестройку всего ландшафта вверенного участка на основе domain-driven design.',
+          'Реорганизовал backend-сервисы по границам предметных областей с применением DDD.',
           'Провожу технические интервью и код-ревью; задаю стандарты backend-разработки в команде.',
         ],
         tags: ['FastAPI', 'Django', 'vLLM', 'AI-агенты', 'MCP', 'CI/CD', 'DDD'],
@@ -276,7 +275,7 @@ const ru: Translation = {
         current: true,
         bullets: [
           'Основал и создал AI-продукт автодиагностики: данные OBD-II + локальная LLM (Gemma) объясняют коды ошибок простым языком.',
-          'Android-приложение выпущено; iOS-версия в разработке; ядро диагностики работает офлайн.',
+          'OBD-II диагностика с AI-объяснениями; актуальные платформы и загрузки — на сайте продукта.',
         ],
         tags: ['LLM', 'Gemma', 'OBD-II', 'Mobile', 'Продукт'],
       },
@@ -323,12 +322,13 @@ const ru: Translation = {
     ],
   },
   projects: {
-    label: 'Open source',
-    heading: 'Библиотеки и инструменты, которые я делаю в открытую',
+    label: "Проекты и Open Source",
+    heading: "Продукты, библиотеки и инструменты",
     sub: 'Продакшн-уровень open source и выпущенные AI-продукты — GitHub, PyPI, App Store, статьи на Medium и dev.to.',
     viewRepo: 'Смотреть репозиторий',
     viewSite: 'Открыть сайт',
     items: [
+      { name: 'AIScanAuto', desc: "AI-автодиагностика: данные OBD-II и объяснения простым языком. Платформы и загрузки — на сайте продукта." },
       { name: 'EchoLang', desc: 'Офлайн AI-переводчик голоса для iPhone — распознавание речи Whisper и перевод TranslateGemma прямо на устройстве через MLX. 33 языка, без облака и аккаунтов, полная приватность.' },
       { name: 'fastapi-viewsets', desc: 'ViewSets в стиле DRF для FastAPI — автогенерация CRUD-эндпоинтов из моделей SQLAlchemy, Tortoise или Peewee.' },
       { name: 'django-graph-search', desc: 'Продакшн семантический векторный поиск для Django — обходит связи FK/M2M, готов к RAG, без миграций.' },
@@ -355,18 +355,17 @@ const ru: Translation = {
 }
 
 const be: Translation = {
-  nav: { about: 'Пра мяне', experience: 'Вопыт', stack: 'Стэк', projects: 'Open Source', writing: 'Артыкулы', contact: 'Кантакты' },
+  nav: { about: 'Пра мяне', experience: 'Вопыт', stack: 'Стэк', projects: "Праекты і Open Source", writing: 'Артыкулы', contact: 'Кантакты' },
   hero: {
     badge: 'Адкрыты да прапаноў',
     role: 'Backend Tech Lead · AI-інжынер · аўтар open source',
-    tagline:
-      'Прыкладныя AI-платформы і backend-сістэмы: Python, FastAPI, Django, Kubernetes, AI/LLM-сістэмы на vLLM, RAG і vector search, CI/CD. Больш за 10 гадоў ператвараю складаную архітэктуру ў працуючыя прадукты.',
+    tagline: "Распрацоўваю backend на Python і прыкладныя AI-прадукты з FastAPI, Django і LLM. У інжынерыі з 2014 года, у вэб-распрацоўцы — з 2021.",
     location: 'Мінск, Беларусь · Гатовы да рэлакацыі',
     ctaContact: 'Звязацца',
     ctaGithub: 'GitHub',
   },
   stats: [
-    { value: '10+', label: 'гадоў вопыту' },
+    { value: '12+', label: 'гадоў у інжынерыі' },
     { value: '20+', label: 'публічных рэпазиторыяў' },
     { value: '3', label: 'пакеты на PyPI' },
     { value: '10+', label: 'тэхнічных артыкулаў' },
@@ -374,7 +373,7 @@ const be: Translation = {
   about: {
     label: 'Пра мяне',
     heading: 'Інжынерны лідар, які выпускае AI-прадукты',
-    p1: 'Я — Tech Lead і AI-інжынер з больш чым 10-гадовым інжынерным вопытам: пяць гадоў займаўся распрацоўкай ПЗ для прамысловасці, затым пяць гадоў — вэб-распрацоўкай на Python і JavaScript (Vue). Мой шлях — ад прамысловай аўтаматызацыі, дзе ў MVLab я звязваў PLC Siemens, Linux-серверы і Python-backend на рэальнай вытворчасці, да сучасных AI-native прадуктаў.',
+    p1: "Tech Lead і AI-інжынер. З 2014 года працую ў інжынерыі: электроніка, прамысловая аўтаматызацыя і праграмнае забеспячэнне. З 2021 года спецыялізуюся на вэб-распрацоўцы на Python і JavaScript. У MVLab злучаў PLC Siemens, Linux-серверы і Python-backend на вытворчасці; цяпер ствараю backend-сістэмы і прыкладныя AI-прадукты.",
     p2: 'Праводжу тэхнічныя сумоўі і код-рэв’ю, прымаю архітэктурныя рашэнні на аснове domain-driven design. Цаню аўтаномію, вымерныя вынікі і ўдзел у прадуктовых рашэннях, а не проста закрыццё тыкетаў.',
     interestsLabel: 'Што мяне натхняе',
     interests: ['Складаная архітэктура', 'Аптымізацыя інферэнсу мадэляў', 'AI-аўтаматызацыя', 'Адкрыты код', 'Прадуктовае мысленне', 'Ментарства'],
@@ -397,7 +396,7 @@ const be: Translation = {
         bullets: [
           'Кірую backend-распрацоўкай AI-native прадуктаў: сэрвісы FastAPI/Django з інтэграцыяй LLM (vLLM, Ollama), прадакшн AI-агенты і MCP-інтэграцыі.',
           'Укараніў CI/CD: плыўны бясшвовы дэплой у прадакшн без простояў і пакрыццё сэрвісаў unit-тэстамі.',
-          'Правёў перабудову ўсяго ландшафту даверанага ўчастка на аснове domain-driven design.',
+          'Рэарганізаваў backend-сервісы паводле межаў прадметных абласцей з прымяненнем DDD.',
           'Праводжу тэхнічныя сумоўі і код-рэв’ю; задаю стандарты backend-распрацоўкі ў камандзе.',
         ],
         tags: ['FastAPI', 'Django', 'vLLM', 'AI-агенты', 'MCP', 'CI/CD', 'DDD'],
@@ -420,7 +419,7 @@ const be: Translation = {
         current: true,
         bullets: [
           'Заснаваў і стварыў AI-прадукт аўтадыягностыкі: дадзеныя OBD-II + лакальная LLM (Gemma) тлумачаць коды памылак простай мовай.',
-          'Android-дадатак выпушчаны; iOS-версія ў распрацоўцы; ядро дыягностыкі працуе афлайн.',
+          'OBD-II дыягностыка з AI-тлумачэннямі; актуальныя платформы і спампоўкі — на сайце прадукту.',
         ],
         tags: ['LLM', 'Gemma', 'OBD-II', 'Mobile', 'Прадукт'],
       },
@@ -467,12 +466,13 @@ const be: Translation = {
     ],
   },
   projects: {
-    label: 'Open source',
-    heading: 'Бібліятэкі і інструменты, якія я раблю адкрыта',
+    label: "Праекты і Open Source",
+    heading: "Прадукты, бібліятэкі і інструменты",
     sub: 'Open source прадакшн-ўзроўню і выпушчаныя AI-прадукты — GitHub, PyPI, App Store, артыкулы на Medium і dev.to.',
     viewRepo: 'Глядзець рэпазиторый',
     viewSite: 'Адкрыць сайт',
     items: [
+      { name: 'AIScanAuto', desc: "AI-аўтадыягностыка: дадзеныя OBD-II і тлумачэнні простай мовай. Платформы і спампоўкі — на сайце прадукту." },
       { name: 'EchoLang', desc: 'Афлайн AI-перакладчык голасу для iPhone — распазнаванне маўлення Whisper і пераклад TranslateGemma непасрэдна на прыладзе праз MLX. 33 мовы, без воблака і акаунтаў, поўная прыватнасць.' },
       { name: 'fastapi-viewsets', desc: 'ViewSets у стылі DRF для FastAPI — аўтагенерацыя CRUD-эндпойнтаў з мадэляў SQLAlchemy, Tortoise або Peewee.' },
       { name: 'django-graph-search', desc: 'Прадакшн семантычны вектарны пошук для Django — абыходзіць сувязі FK/M2M, гатовы да RAG, без міграцый.' },
@@ -504,22 +504,12 @@ export const langNames: Record<Lang, string> = { en: 'EN', ru: 'RU', be: 'BE' }
 
 interface LangCtx {
   lang: Lang
-  setLang: (l: Lang) => void
   t: Translation
 }
 
-const LanguageContext = createContext<LangCtx>({ lang: 'en', setLang: () => {}, t: en })
+const LanguageContext = createContext<LangCtx>({ lang: 'en', t: en })
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>(() => {
-    const saved = localStorage.getItem('av-lang')
-    return saved === 'ru' || saved === 'be' || saved === 'en' ? saved : 'en'
-  })
-  const setLang = (l: Lang) => {
-    setLangState(l)
-    localStorage.setItem('av-lang', l)
-  }
-  return <LanguageContext.Provider value={{ lang, setLang, t: translations[lang] }}>{children}</LanguageContext.Provider>
+export function LanguageProvider({ children, lang = 'en' }: { children: ReactNode; lang?: Lang }) {
+  return <LanguageContext.Provider value={{ lang, t: translations[lang] }}>{children}</LanguageContext.Provider>
 }
-
 export const useLang = () => useContext(LanguageContext)

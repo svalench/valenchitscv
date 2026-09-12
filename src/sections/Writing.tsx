@@ -20,10 +20,10 @@ export default function Writing() {
             className="reveal group flex items-center justify-between gap-4 px-6 py-5 transition-colors first:rounded-t-3xl last:rounded-b-3xl hover:bg-white/[0.03] md:px-8"
           >
             <div className="min-w-0">
-              <h3 className="truncate text-[15px] font-medium text-white/85 transition-colors group-hover:text-[#ff8c42] md:text-base">
+              <h3 className="text-[15px] font-medium text-white/85 transition-colors group-hover:text-[#ff8c42] md:text-base">
                 {a.title}
               </h3>
-              <p className="mt-1 font-mono2 text-[11px] text-white/35">
+              <p className="mt-1 font-mono2 text-[11px] text-white/75">
                 {a.source} · {a.date}
               </p>
             </div>

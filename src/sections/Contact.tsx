@@ -13,7 +13,7 @@ const profiles = [
 ]
 
 export default function Contact() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
 
   return (
     <section id="contact" className="border-t border-white/10 px-6 py-20 md:px-12 lg:py-28">
@@ -22,7 +22,7 @@ export default function Contact() {
 
         <div className="relative">
           <SectionHead label={t.contact.label} heading={t.contact.heading} />
-          <p className="max-w-xl text-[15px] leading-relaxed text-white/60">{t.contact.text}</p>
+          <p className="max-w-xl text-[15px] leading-relaxed text-white/75">{t.contact.text}</p>
 
           <a
             href={links.linkedin}
@@ -33,6 +33,10 @@ export default function Contact() {
             {t.contact.cta}
             <ArrowUpRight size={16} />
           </a>
+
+          <button type="button" onClick={() => window.print()} className="ml-4 mt-4 rounded-full border border-white/30 px-6 py-3 text-sm text-white">
+            {lang === 'ru' ? 'Сохранить CV в PDF' : lang === 'be' ? 'Захаваць CV у PDF' : 'Save CV as PDF'}
+          </button>
 
           <p className="mb-4 mt-12 font-mono2 text-xs uppercase tracking-[0.25em] text-[#ff5a1f]">
             {t.contact.profilesLabel}
@@ -49,7 +53,7 @@ export default function Contact() {
                 <p.icon size={18} className="shrink-0 text-[#ff5a1f]" />
                 <div className="min-w-0">
                   <p className="text-sm font-semibold text-white/90">{p.name}</p>
-                  <p className="truncate font-mono2 text-[11px] text-white/40">{p.handle}</p>
+                  <p className="truncate font-mono2 text-[11px] text-white/75">{p.handle}</p>
                 </div>
                 <ArrowUpRight size={14} className="ml-auto shrink-0 text-white/30 transition-colors group-hover:text-[#ff5a1f]" />
               </a>
