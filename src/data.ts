@@ -11,12 +11,14 @@ export interface ProjectMeta {
   name: string
   url: string
   pypi?: string
+  product?: string
   stars: number
   language: string
   featured?: boolean
 }
 
 export const projectsMeta: ProjectMeta[] = [
+  { name: 'EchoLang', url: 'https://echolang.io/', product: 'iOS App', stars: 0, language: 'Swift · iOS', featured: true },
   { name: 'fastapi-viewsets', url: 'https://github.com/svalench/fastapi_viewsets', pypi: 'https://pypi.org/project/fastapi-viewsets/', stars: 4, language: 'Python', featured: true },
   { name: 'django-graph-search', url: 'https://github.com/svalench/django_graph_search', pypi: 'https://pypi.org/project/django-graph-search/', stars: 3, language: 'Python', featured: true },
   { name: 'llm-cache-router', url: 'https://github.com/svalench/llm-cache-router', pypi: 'https://pypi.org/project/llm-cache-router/', stars: 2, language: 'Python', featured: true },

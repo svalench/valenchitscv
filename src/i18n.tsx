@@ -47,6 +47,7 @@ export interface Translation {
     heading: string
     sub: string
     viewRepo: string
+    viewSite: string
     items: { name: string; desc: string }[]
   }
   writing: {
@@ -180,9 +181,11 @@ const en: Translation = {
   projects: {
     label: 'Open source',
     heading: 'Libraries & tools I build in public',
-    sub: 'Production-grade open source — published on GitHub and PyPI, written about on Medium and dev.to.',
+    sub: 'Production-grade open source and shipped AI products — published on GitHub and PyPI, in the App Store, written about on Medium and dev.to.',
     viewRepo: 'View repository',
+    viewSite: 'Visit site',
     items: [
+      { name: 'EchoLang', desc: 'Offline AI voice translator for iPhone — on-device Whisper speech recognition and TranslateGemma translation via MLX. 33 languages, no cloud, no accounts, fully private.' },
       { name: 'fastapi-viewsets', desc: 'DRF-style ViewSets for FastAPI — auto-generates CRUD endpoints from SQLAlchemy, Tortoise or Peewee models.' },
       { name: 'django-graph-search', desc: 'Production-ready semantic vector search for Django — traverses FK/M2M relations, RAG-ready, zero migrations.' },
       { name: 'llm-cache-router', desc: 'Semantic caching + multi-provider LLM routing with cost tracking — a lightweight production library.' },
@@ -322,9 +325,11 @@ const ru: Translation = {
   projects: {
     label: 'Open source',
     heading: 'Библиотеки и инструменты, которые я делаю в открытую',
-    sub: 'Продакшн-уровень open source — публикую на GitHub и PyPI, пишу об этом на Medium и dev.to.',
+    sub: 'Продакшн-уровень open source и выпущенные AI-продукты — GitHub, PyPI, App Store, статьи на Medium и dev.to.',
     viewRepo: 'Смотреть репозиторий',
+    viewSite: 'Открыть сайт',
     items: [
+      { name: 'EchoLang', desc: 'Офлайн AI-переводчик голоса для iPhone — распознавание речи Whisper и перевод TranslateGemma прямо на устройстве через MLX. 33 языка, без облака и аккаунтов, полная приватность.' },
       { name: 'fastapi-viewsets', desc: 'ViewSets в стиле DRF для FastAPI — автогенерация CRUD-эндпоинтов из моделей SQLAlchemy, Tortoise или Peewee.' },
       { name: 'django-graph-search', desc: 'Продакшн семантический векторный поиск для Django — обходит связи FK/M2M, готов к RAG, без миграций.' },
       { name: 'llm-cache-router', desc: 'Семантическое кэширование + мультипровайдерная маршрутизация LLM с учётом расходов — лёгкая продакшн-библиотека.' },
@@ -464,9 +469,11 @@ const be: Translation = {
   projects: {
     label: 'Open source',
     heading: 'Бібліятэкі і інструменты, якія я раблю адкрыта',
-    sub: 'Open source прадакшн-ўзроўню — публікую на GitHub і PyPI, пішу пра гэта на Medium і dev.to.',
+    sub: 'Open source прадакшн-ўзроўню і выпушчаныя AI-прадукты — GitHub, PyPI, App Store, артыкулы на Medium і dev.to.',
     viewRepo: 'Глядзець рэпазиторый',
+    viewSite: 'Адкрыць сайт',
     items: [
+      { name: 'EchoLang', desc: 'Афлайн AI-перакладчык голасу для iPhone — распазнаванне маўлення Whisper і пераклад TranslateGemma непасрэдна на прыладзе праз MLX. 33 мовы, без воблака і акаунтаў, поўная прыватнасць.' },
       { name: 'fastapi-viewsets', desc: 'ViewSets у стылі DRF для FastAPI — аўтагенерацыя CRUD-эндпойнтаў з мадэляў SQLAlchemy, Tortoise або Peewee.' },
       { name: 'django-graph-search', desc: 'Прадакшн семантычны вектарны пошук для Django — абыходзіць сувязі FK/M2M, гатовы да RAG, без міграцый.' },
       { name: 'llm-cache-router', desc: 'Семантычнае кэшаванне + мультыправайдарная маршрутызацыя LLM з улікам выдаткаў — лёгкая прадакшн-бібліятэка.' },

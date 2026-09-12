@@ -1,4 +1,4 @@
-import { Star, ArrowUpRight, Package } from 'lucide-react'
+import { Star, ArrowUpRight, Package, Smartphone } from 'lucide-react'
 import { useLang } from '../i18n'
 import { projectsMeta } from '../data'
 import SectionHead from './SectionHead'
@@ -35,9 +35,16 @@ export default function Projects() {
                       <Package size={11} /> PyPI
                     </span>
                   )}
-                  <span className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-white/55">
-                    <Star size={11} className="text-[#ffb37a]" /> {meta.stars}
-                  </span>
+                  {meta.product && (
+                    <span className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-medium text-white/55">
+                      <Smartphone size={11} /> {meta.product}
+                    </span>
+                  )}
+                  {!meta.product && (
+                    <span className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-white/55">
+                      <Star size={11} className="text-[#ffb37a]" /> {meta.stars}
+                    </span>
+                  )}
                 </div>
               </div>
 
@@ -52,7 +59,7 @@ export default function Projects() {
                   {meta.language}
                 </span>
                 <span className="flex items-center gap-1 text-[12px] font-medium text-[#ff5a1f] opacity-0 transition-opacity group-hover:opacity-100">
-                  {t.projects.viewRepo} <ArrowUpRight size={13} />
+                  {meta.product ? t.projects.viewSite : t.projects.viewRepo} <ArrowUpRight size={13} />
                 </span>
               </div>
             </a>
