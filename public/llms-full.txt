@@ -1,0 +1,966 @@
+# Alexander Valenchits
+
+> Python Django / FastAPI developer. Backend developer, Minsk, Belarus, remote. Tech Lead for LLM and RAG.
+
+Alexander Valenchits — Python Backend Tech Lead & AI Engineer
+
+Backend Tech Lead · AI Engineer · Open-Source Author
+
+Python Django / FastAPI developer. I build backends and applied AI products with LLMs. Engineering since 2014; web development since 2021.
+
+Minsk, Belarus · Open to relocation
+
+Open to work
+
+Alusoft
+
+Minsk
+
+BY
+
+valenchits@icloud.com
+
+- Python
+- Django
+- FastAPI
+- LLM
+- RAG
+- PostgreSQL
+- Docker
+
+- Александр Валенчиц
+- Аляксандр Валенчыц
+- Aliaksandr Valenchits
+- Alexander Valenchits (svalench)
+- svalench
+
+- English
+- Russian
+- Belarusian
+
+English
+
+Alexander Valenchits
+
+Python Django / FastAPI developer. Backend developer, Minsk, Belarus, remote. Tech Lead for LLM and RAG.
+
+Open to work
+
+Backend Tech Lead · AI Engineer · Open-Source Author
+
+Python Django / FastAPI developer. I build backends and applied AI products with LLMs. Engineering since 2014; web development since 2021.
+
+Minsk, Belarus · Open to relocation
+
+12+
+
+Years in engineering
+
+20+
+
+Public repositories
+
+3
+
+PyPI packages
+
+10+
+
+Technical articles
+
+About me
+
+Engineering leader who ships AI products
+
+Python Django / FastAPI developer and backend developer, Minsk, Belarus, remote. Tech Lead and AI Engineer with an engineering career spanning electronics, industrial automation and software since 2014. Since 2021, I have focused on Python and JavaScript web development. At MVLab, I connected Siemens PLCs, Linux servers and Python backends on factory floors. Today I build backend systems and applied AI products.
+
+I run technical interviews and code reviews, and make architecture decisions grounded in domain-driven design. I value autonomy, measurable outcomes and a seat at the table when product decisions are made.
+
+What drives me
+
+- Complex architecture
+- Model inference optimization
+- AI automation
+- Open source
+- Product thinking
+- Mentoring
+
+Languages
+
+Belarusian
+
+Native
+
+Russian
+
+Native
+
+English
+
+Professional working
+
+Tech Lead · AI Engineer
+
+Minsk → Worldwide
+
+Career
+
+Work experience
+
+Alusoft
+
+Backend Tech Lead
+
+Mar 2025 — Present
+
+- Lead backend development of AI-native products: FastAPI/Django services with LLM integration (vLLM, Ollama), production AI agents and MCP integrations.
+- Introduced CI/CD with smooth zero-downtime production deploys and unit-test coverage across services.
+- Restructured backend services around domain boundaries using domain-driven design.
+- Run technical interviews and code reviews; set backend engineering standards for the team.
+
+- FastAPI
+- Django
+- vLLM
+- AI agents
+- MCP
+- CI/CD
+- DDD
+
+AlusoftBel
+
+Software Engineer
+
+May 2021 — Jun 2025
+
+- Internal web development: Python backends (Django, DRF, Celery) with Vue.js frontends on PostgreSQL / MySQL.
+- Built vector search, embeddings and RAG pipelines over production data.
+- Daily development with Cursor AI and AI-assisted workflows.
+
+- Django
+- DRF
+- Celery
+- Vue.js
+- PostgreSQL
+- Cursor AI
+
+AIScanAuto — aiscanauto.com
+
+Founder
+
+2025 — Present
+
+- Founded and built an AI car-diagnostics product: OBD-II data combined with a local LLM (Gemma) that explains fault codes in plain language.
+- OBD-II diagnostics with AI explanations; see the product website for current platforms and downloads.
+
+- LLM
+- Gemma
+- OBD-II
+- Mobile
+- Product
+
+MVLab
+
+Software Engineer
+
+Oct 2019 — May 2021
+
+- Sewage pumping station (SPS) control system: Siemens PLC + Linux servers + Python backend.
+- Weighing station with license-plate recognition on Siemens S7-1200.
+- Machine-vision system detecting knots in boards on a sawmill line.
+- Crane-operation optimization on Siemens S7-400.
+
+- Siemens PLC
+- OPC UA
+- Python
+- Linux
+- Computer Vision
+
+AST Expert
+
+Automation Engineer
+
+Sep 2018 — Nov 2019
+
+- Industrial automation: PLC-based control systems and process instrumentation for manufacturing facilities.
+
+- PLC
+- SCADA
+- Automation
+
+Belshina
+
+Electronics Engineer
+
+Aug 2014 — Sep 2018
+
+- Electronics engineering at one of the largest tire manufacturers in Eastern Europe: maintenance and development of electronic control systems.
+
+- Electronics
+- Industrial systems
+
+Capabilities
+
+Tech stack
+
+Backend
+
+- Python
+- FastAPI
+- Django
+- DRF
+- Celery
+- SQL
+- PostgreSQL
+- MySQL
+- ORM
+- Alembic
+
+AI / ML
+
+- LLM integration
+- vLLM
+- Ollama
+- Vector search
+- Embeddings
+- RAG
+- AI agents
+- MCP
+
+DevOps & Servers
+
+- Docker
+- Docker Compose
+- Kubernetes
+- Linux
+- Jenkins
+- TimescaleDB
+
+Frontend
+
+- Vue.js
+- Nuxt
+- React (dashboards)
+- HTML
+- JavaScript
+- Responsive design
+- SEO
+
+Projects & Open Source
+
+Products, libraries & tools
+
+Production-grade open source and shipped AI products — published on GitHub and PyPI, in the App Store, written about on Medium and dev.to.
+
+AIScanAuto
+
+AI car diagnostics combining OBD-II data with plain-language explanations. Platform availability and downloads on the product website.
+
+EchoLang
+
+Offline AI voice translator for iPhone — on-device Whisper speech recognition and TranslateGemma translation via MLX. 33 languages, no cloud, no accounts, fully private.
+
+fastapi-viewsets
+
+DRF-style ViewSets for FastAPI — auto-generates CRUD endpoints from SQLAlchemy, Tortoise or Peewee models.
+
+django-graph-search
+
+Production-ready semantic vector search for Django — traverses FK/M2M relations, RAG-ready, zero migrations.
+
+llm-cache-router
+
+Semantic caching + multi-provider LLM routing with cost tracking — a lightweight production library.
+
+testcaseer
+
+CLI tool that transforms browser actions into ready-to-use test cases. Stop writing them by hand.
+
+pgadmin-ai-gateway
+
+Secure AI-agent connector for pgAdmin with RBAC roles, audit logging and an MCP-compatible interface for PostgreSQL.
+
+pythonSiemens
+
+Industrial tooling from the factory floor: Python ↔ Siemens PLC communication (OPC UA / S7), data logging and vision pipelines.
+
+Writing
+
+Articles & essays
+
+I write about FastAPI, Django, LLM tooling and the realities of shipping AI products.
+
+fastapi-viewsets vs fastapi-crudrouter: Which CRUD Generator Should You Pick in 2026?
+
+Medium · Aug 2026
+
+Building a Shop Admin Panel CRUD in Minutes with fastapi-viewsets
+
+Medium · Jun 2026
+
+Add Semantic Search + RAG to Any Django App in 5 Minutes (No Migrations)
+
+Medium · Jun 2026
+
+I Built a Free AI Assistant for Car Diagnostics, for what?
+
+Medium · May 2026
+
+Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner
+
+dev.to · May 2026
+
+We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath
+
+dev.to · Apr 2026
+
+Stop Writing CRUD Boilerplate for FastAPI — Use ViewSets Instead
+
+dev.to · Apr 2026
+
+Contact
+
+Let’s build something exceptional
+
+Open to Tech Lead / AI Engineer roles in product-driven, AI-native teams — and to interesting collaborations in open source.
+
+Write me on LinkedIn
+
+Find me on
+
+© 2026 Alexander Valenchits
+
+Tech Lead & AI Engineer
+
+Russian
+
+Александр Валенчиц
+
+Python-разработчик Django/FastAPI, Минск. Backend на FastAPI и Django, удалённо. LLM и RAG.
+
+Открыт к предложениям
+
+Backend Tech Lead · AI-инженер · автор open source
+
+Python-разработчик Django/FastAPI, Минск. Разрабатываю backend и прикладные AI-продукты с LLM. В инженерии с 2014 года, в веб-разработке — с 2021.
+
+Минск, Беларусь · Готов к релокации
+
+12+
+
+лет в инженерии
+
+20+
+
+публичных репозиториев
+
+3
+
+пакета на PyPI
+
+10+
+
+технических статей
+
+Обо мне
+
+Инженерный лидер, который выпускает AI-продукты
+
+Python-разработчик Django/FastAPI, Минск. Tech Lead и AI-инженер. С 2014 года работаю в инженерии: электроника, промышленная автоматизация и программное обеспечение. С 2021 года специализируюсь на веб-разработке на Python и JavaScript. В MVLab связывал PLC Siemens, Linux-серверы и Python-backend на производстве; сейчас создаю backend-системы и прикладные AI-продукты.
+
+Провожу технические интервью и код-ревью, принимаю архитектурные решения на основе domain-driven design. Ценю автономию, измеримые результаты и участие в продуктовых решениях — а не просто закрытие тикетов.
+
+Что меня вдохновляет
+
+- Сложная архитектура
+- Оптимизация инференса моделей
+- AI-автоматизация
+- Открытый код
+- Продуктовое мышление
+- Менторство
+
+Языки
+
+Беларуская
+
+Родной
+
+Русский
+
+Родной
+
+English
+
+Professional working
+
+Tech Lead · AI Engineer
+
+Minsk → Worldwide
+
+Карьера
+
+Опыт работы
+
+Alusoft
+
+Backend Tech Lead
+
+Мар 2025 — настоящее время
+
+- Руковожу backend-разработкой AI-native продуктов: сервисы FastAPI/Django с интеграцией LLM (vLLM, Ollama), продакшн AI-агенты и MCP-интеграции.
+- Внедрил CI/CD: плавный бесшовный деплой в продакшн без простоев и покрытие сервисов unit-тестами.
+- Реорганизовал backend-сервисы по границам предметных областей с применением DDD.
+- Провожу технические интервью и код-ревью; задаю стандарты backend-разработки в команде.
+
+- FastAPI
+- Django
+- vLLM
+- AI-агенты
+- MCP
+- CI/CD
+- DDD
+
+АлюсофтБел
+
+Программист
+
+Май 2021 — июн 2025
+
+- Внутренняя веб-разработка: backend на Python (Django, DRF, Celery) и фронтенды на Vue.js, PostgreSQL / MySQL.
+- Построил vector search, embeddings и RAG-пайплайны над продакшн-данными.
+- Ежедневная разработка с Cursor AI и AI-ассистированными процессами.
+
+- Django
+- DRF
+- Celery
+- Vue.js
+- PostgreSQL
+- Cursor AI
+
+AIScanAuto — aiscanauto.com
+
+Основатель
+
+2025 — настоящее время
+
+- Основал и создал AI-продукт автодиагностики: данные OBD-II + локальная LLM (Gemma) объясняют коды ошибок простым языком.
+- OBD-II диагностика с AI-объяснениями; актуальные платформы и загрузки — на сайте продукта.
+
+- LLM
+- Gemma
+- OBD-II
+- Mobile
+- Продукт
+
+МВЛАБ
+
+Инженер-программист
+
+Окт 2019 — май 2021
+
+- Управление канализационной насосной станцией (КНС): Siemens PLC + Linux-серверы + Python-backend.
+- Весовая станция с распознаванием автомобильных номеров на Siemens S7-1200.
+- Система машинного зрения для распознавания сучков на распиле досок.
+- Оптимизация работы кранов на Siemens S7-400.
+
+- Siemens PLC
+- OPC UA
+- Python
+- Linux
+- Computer Vision
+
+АСТ Эксперт
+
+Инженер по автоматизации
+
+Сен 2018 — ноя 2019
+
+- Промышленная автоматизация: системы управления на базе PLC и КИПиА для производственных объектов.
+
+- PLC
+- SCADA
+- Автоматизация
+
+ОАО «Белшина»
+
+Инженер-электроник
+
+Авг 2014 — сен 2018
+
+- Инженер-электроник на одном из крупнейших шинных заводов Восточной Европы: обслуживание и развитие электронных систем управления.
+
+- Электроника
+- Промышленные системы
+
+Компетенции
+
+Технический стек
+
+Backend
+
+- Python
+- FastAPI
+- Django
+- DRF
+- Celery
+- SQL
+- PostgreSQL
+- MySQL
+- ORM
+- Alembic
+
+AI / ML
+
+- Интеграция LLM
+- vLLM
+- Ollama
+- Vector search
+- Embeddings
+- RAG
+- AI-агенты
+- MCP
+
+DevOps и серверы
+
+- Docker
+- Docker Compose
+- Kubernetes
+- Linux
+- Jenkins
+- TimescaleDB
+
+Frontend
+
+- Vue.js
+- Nuxt
+- React (дашборды)
+- HTML
+- JavaScript
+- Адаптивная вёрстка
+- SEO
+
+Проекты и Open Source
+
+Продукты, библиотеки и инструменты
+
+Продакшн-уровень open source и выпущенные AI-продукты — GitHub, PyPI, App Store, статьи на Medium и dev.to.
+
+AIScanAuto
+
+AI-автодиагностика: данные OBD-II и объяснения простым языком. Платформы и загрузки — на сайте продукта.
+
+EchoLang
+
+Офлайн AI-переводчик голоса для iPhone — распознавание речи Whisper и перевод TranslateGemma прямо на устройстве через MLX. 33 языка, без облака и аккаунтов, полная приватность.
+
+fastapi-viewsets
+
+ViewSets в стиле DRF для FastAPI — автогенерация CRUD-эндпоинтов из моделей SQLAlchemy, Tortoise или Peewee.
+
+django-graph-search
+
+Продакшн семантический векторный поиск для Django — обходит связи FK/M2M, готов к RAG, без миграций.
+
+llm-cache-router
+
+Семантическое кэширование + мультипровайдерная маршрутизация LLM с учётом расходов — лёгкая продакшн-библиотека.
+
+testcaseer
+
+CLI-инструмент, превращающий действия в браузере в готовые тест-кейсы. Хватит писать их вручную.
+
+pgadmin-ai-gateway
+
+Безопасный коннектор AI-агентов для pgAdmin с RBAC-ролями, аудитом и MCP-совместимым интерфейсом для PostgreSQL.
+
+pythonSiemens
+
+Индустриальные инструменты с производства: связь Python ↔ PLC Siemens (OPC UA / S7), логирование данных и пайплайны машинного зрения.
+
+Публикации
+
+Статьи и эссе
+
+Пишу о FastAPI, Django, LLM-инструментах и реальном опыте выпуска AI-продуктов.
+
+fastapi-viewsets vs fastapi-crudrouter: Which CRUD Generator Should You Pick in 2026?
+
+Medium · Aug 2026
+
+Building a Shop Admin Panel CRUD in Minutes with fastapi-viewsets
+
+Medium · Jun 2026
+
+Add Semantic Search + RAG to Any Django App in 5 Minutes (No Migrations)
+
+Medium · Jun 2026
+
+I Built a Free AI Assistant for Car Diagnostics, for what?
+
+Medium · May 2026
+
+Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner
+
+dev.to · May 2026
+
+We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath
+
+dev.to · Apr 2026
+
+Stop Writing CRUD Boilerplate for FastAPI — Use ViewSets Instead
+
+dev.to · Apr 2026
+
+Контакты
+
+Давайте создадим что-то выдающееся
+
+Открыт к ролям Tech Lead / AI Engineer в продуктовых AI-native командах — и к интересным коллаборациям в open source.
+
+Написать в LinkedIn
+
+Мои профили
+
+© 2026 Alexander Valenchits
+
+Tech Lead & AI Engineer
+
+Belarusian
+
+Аляксандр Валенчыц
+
+Python-распрацоўшчык Django/FastAPI, Мінск. Backend на FastAPI і Django, аддалена. LLM і RAG.
+
+Адкрыты да прапаноў
+
+Backend Tech Lead · AI-інжынер · аўтар open source
+
+Python-распрацоўшчык Django/FastAPI, Мінск. Распрацоўваю backend і прыкладныя AI-прадукты з LLM. У інжынерыі з 2014 года, у вэб-распрацоўцы — з 2021.
+
+Мінск, Беларусь · Гатовы да рэлакацыі
+
+12+
+
+гадоў у інжынерыі
+
+20+
+
+публічных рэпазиторыяў
+
+3
+
+пакеты на PyPI
+
+10+
+
+тэхнічных артыкулаў
+
+Пра мяне
+
+Інжынерны лідар, які выпускае AI-прадукты
+
+Python-распрацоўшчык Django/FastAPI, Мінск. Tech Lead і AI-інжынер. З 2014 года працую ў інжынерыі: электроніка, прамысловая аўтаматызацыя і праграмнае забеспячэнне. З 2021 года спецыялізуюся на вэб-распрацоўцы на Python і JavaScript. У MVLab злучаў PLC Siemens, Linux-серверы і Python-backend на вытворчасці; цяпер ствараю backend-сістэмы і прыкладныя AI-прадукты.
+
+Праводжу тэхнічныя сумоўі і код-рэв’ю, прымаю архітэктурныя рашэнні на аснове domain-driven design. Цаню аўтаномію, вымерныя вынікі і ўдзел у прадуктовых рашэннях, а не проста закрыццё тыкетаў.
+
+Што мяне натхняе
+
+- Складаная архітэктура
+- Аптымізацыя інферэнсу мадэляў
+- AI-аўтаматызацыя
+- Адкрыты код
+- Прадуктовае мысленне
+- Ментарства
+
+Мовы
+
+Беларуская
+
+Родная
+
+Русская
+
+Родная
+
+English
+
+Professional working
+
+Tech Lead · AI Engineer
+
+Minsk → Worldwide
+
+Кар’ера
+
+Вопыт працы
+
+Alusoft
+
+Backend Tech Lead
+
+Сак 2025 — цяпер
+
+- Кірую backend-распрацоўкай AI-native прадуктаў: сэрвісы FastAPI/Django з інтэграцыяй LLM (vLLM, Ollama), прадакшн AI-агенты і MCP-інтэграцыі.
+- Укараніў CI/CD: плыўны бясшвовы дэплой у прадакшн без простояў і пакрыццё сэрвісаў unit-тэстамі.
+- Рэарганізаваў backend-сервісы паводле межаў прадметных абласцей з прымяненнем DDD.
+- Праводжу тэхнічныя сумоўі і код-рэв’ю; задаю стандарты backend-распрацоўкі ў камандзе.
+
+- FastAPI
+- Django
+- vLLM
+- AI-агенты
+- MCP
+- CI/CD
+- DDD
+
+АлюсофтБел
+
+Праграміст
+
+Май 2021 — чэр 2025
+
+- Унутраная вэб-распрацоўка: backend на Python (Django, DRF, Celery) і фронтэнды на Vue.js, PostgreSQL / MySQL.
+- Пабудаваў vector search, embeddings і RAG-канвееры над прадакшн-дадзенымі.
+- Штодзённая распрацоўка з Cursor AI і AI-асіставанымі працэсамі.
+
+- Django
+- DRF
+- Celery
+- Vue.js
+- PostgreSQL
+- Cursor AI
+
+AIScanAuto — aiscanauto.com
+
+Заснавальнік
+
+2025 — цяпер
+
+- Заснаваў і стварыў AI-прадукт аўтадыягностыкі: дадзеныя OBD-II + лакальная LLM (Gemma) тлумачаць коды памылак простай мовай.
+- OBD-II дыягностыка з AI-тлумачэннямі; актуальныя платформы і спампоўкі — на сайце прадукту.
+
+- LLM
+- Gemma
+- OBD-II
+- Mobile
+- Прадукт
+
+МВЛАБ
+
+Інжынер-праграміст
+
+Кас 2019 — май 2021
+
+- Кіраванне каналізацыйнай насоснай станцыяй (КНС): Siemens PLC + Linux-серверы + Python-backend.
+- Вагавая станцыя з распазнаваннем аўтамабільных нумароў на Siemens S7-1200.
+- Сістэма машыннага зроку для распазнавання сучкоў на распілоўцы досак.
+- Аптымізацыя работы кранаў на Siemens S7-400.
+
+- Siemens PLC
+- OPC UA
+- Python
+- Linux
+- Computer Vision
+
+АСТ Эксперт
+
+Інжынер па аўтаматызацыі
+
+Вер 2018 — ліс 2019
+
+- Прамысловая аўтаматызацыя: сістэмы кіравання на базе PLC і КІПіА для вытворчых аб’ектаў.
+
+- PLC
+- SCADA
+- Аўтаматызацыя
+
+ААТ «Белшына»
+
+Інжынер-электронік
+
+Жні 2014 — вер 2018
+
+- Інжынер-электронік на адным з найбуйнейшых шынных заводаў Усходняй Еўропы: абслугоўванне і развіццё электронных сістэм кіравання.
+
+- Электроніка
+- Прамысловыя сістэмы
+
+Кампетэнцыі
+
+Тэхнічны стэк
+
+Backend
+
+- Python
+- FastAPI
+- Django
+- DRF
+- Celery
+- SQL
+- PostgreSQL
+- MySQL
+- ORM
+- Alembic
+
+AI / ML
+
+- Інтэграцыя LLM
+- vLLM
+- Ollama
+- Vector search
+- Embeddings
+- RAG
+- AI-агенты
+- MCP
+
+DevOps і серверы
+
+- Docker
+- Docker Compose
+- Kubernetes
+- Linux
+- Jenkins
+- TimescaleDB
+
+Frontend
+
+- Vue.js
+- Nuxt
+- React (дашборды)
+- HTML
+- JavaScript
+- Адаптыўная вёрстка
+- SEO
+
+Праекты і Open Source
+
+Прадукты, бібліятэкі і інструменты
+
+Open source прадакшн-ўзроўню і выпушчаныя AI-прадукты — GitHub, PyPI, App Store, артыкулы на Medium і dev.to.
+
+AIScanAuto
+
+AI-аўтадыягностыка: дадзеныя OBD-II і тлумачэнні простай мовай. Платформы і спампоўкі — на сайце прадукту.
+
+EchoLang
+
+Афлайн AI-перакладчык голасу для iPhone — распазнаванне маўлення Whisper і пераклад TranslateGemma непасрэдна на прыладзе праз MLX. 33 мовы, без воблака і акаунтаў, поўная прыватнасць.
+
+fastapi-viewsets
+
+ViewSets у стылі DRF для FastAPI — аўтагенерацыя CRUD-эндпойнтаў з мадэляў SQLAlchemy, Tortoise або Peewee.
+
+django-graph-search
+
+Прадакшн семантычны вектарны пошук для Django — абыходзіць сувязі FK/M2M, гатовы да RAG, без міграцый.
+
+llm-cache-router
+
+Семантычнае кэшаванне + мультыправайдарная маршрутызацыя LLM з улікам выдаткаў — лёгкая прадакшн-бібліятэка.
+
+testcaseer
+
+CLI-інструмент, які ператварае дзеянні ў браўзеры ў гатовыя тэст-кейсы. Больш не трэба пісаць іх уручную.
+
+pgadmin-ai-gateway
+
+Бяспечны канектар AI-агентаў для pgAdmin з RBAC-ролямі, аўдытам і MCP-сумяшчальным інтэрфейсам для PostgreSQL.
+
+pythonSiemens
+
+Індустрыяльныя інструменты з вытворчасці: сувязь Python ↔ PLC Siemens (OPC UA / S7), лагіраванне дадзеных і канвееры машыннага зроку.
+
+Публікацыі
+
+Артыкулы і эсэ
+
+Пішу пра FastAPI, Django, LLM-інструменты і рэальны вопыт выпуску AI-прадуктаў.
+
+fastapi-viewsets vs fastapi-crudrouter: Which CRUD Generator Should You Pick in 2026?
+
+Medium · Aug 2026
+
+Building a Shop Admin Panel CRUD in Minutes with fastapi-viewsets
+
+Medium · Jun 2026
+
+Add Semantic Search + RAG to Any Django App in 5 Minutes (No Migrations)
+
+Medium · Jun 2026
+
+I Built a Free AI Assistant for Car Diagnostics, for what?
+
+Medium · May 2026
+
+Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner
+
+dev.to · May 2026
+
+We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath
+
+dev.to · Apr 2026
+
+Stop Writing CRUD Boilerplate for FastAPI — Use ViewSets Instead
+
+dev.to · Apr 2026
+
+Кантакты
+
+Давайце створым нешта выключнае
+
+Адкрыты да роляў Tech Lead / AI Engineer у прадуктовых AI-native камандах — і да цікавых калаборацый у open source.
+
+Напісаць у LinkedIn
+
+Мае профілі
+
+© 2026 Alexander Valenchits
+
+Tech Lead & AI Engineer
+
+## English
+
+- [Alexander Valenchits](https://valenchits.dev/): Python Django / FastAPI developer. Backend developer, Minsk, Belarus, remote. Tech Lead for LLM and RAG.
+
+## Russian
+
+- [Александр Валенчиц](https://valenchits.dev/ru/): Python-разработчик Django/FastAPI, Минск. Backend на FastAPI и Django, удалённо. LLM и RAG.
+
+## Belarusian
+
+- [Аляксандр Валенчыц](https://valenchits.dev/be/): Python-распрацоўшчык Django/FastAPI, Мінск. Backend на FastAPI і Django, аддалена. LLM і RAG.
+
+## Find me on
+
+- [GitHub](https://github.com/svalench): svalench
+- [LinkedIn](https://www.linkedin.com/in/valenchits/): in/valenchits
+- [dev.to](https://dev.to/valenchits): valenchits
+- [Medium](https://medium.com/@chitsalex): @chitsalex
+- [Wellfound](https://wellfound.com/u/valenchits): valenchits
+- [Hirify](https://hirify.me/valenchits): valenchits
+
+## Projects & Open Source
+
+- [AIScanAuto](https://aiscanauto.com): AI car diagnostics combining OBD-II data with plain-language explanations. Platform availability and downloads on the product website.
+- [EchoLang](https://echolang.io): Offline AI voice translator for iPhone — on-device Whisper speech recognition and TranslateGemma translation via MLX. 33 languages, no cloud, no accounts, fully private.
+- [fastapi-viewsets](https://github.com/svalench/fastapi_viewsets): DRF-style ViewSets for FastAPI — auto-generates CRUD endpoints from SQLAlchemy, Tortoise or Peewee models.
+- [django-graph-search](https://github.com/svalench/django_graph_search): Production-ready semantic vector search for Django — traverses FK/M2M relations, RAG-ready, zero migrations.
+- [llm-cache-router](https://github.com/svalench/llm-cache-router): Semantic caching + multi-provider LLM routing with cost tracking — a lightweight production library.
+- [testcaseer](https://github.com/svalench/testcaseer): CLI tool that transforms browser actions into ready-to-use test cases. Stop writing them by hand.
+- [pgadmin-ai-gateway](https://github.com/svalench/pgadmin-ai-gateway): Secure AI-agent connector for pgAdmin with RBAC roles, audit logging and an MCP-compatible interface for PostgreSQL.
+- [pythonSiemens](https://github.com/svalench/pythonSiemens): Industrial tooling from the factory floor: Python ↔ Siemens PLC communication (OPC UA / S7), data logging and vision pipelines.
+
+## Writing
+
+- [fastapi-viewsets vs fastapi-crudrouter: Which CRUD Generator Should You Pick in 2026?](https://medium.com/@chitsalex/fastapi-viewsets-vs-fastapi-crudrouter-which-crud-generator-should-you-pick-in-2026-af5dda530f7c): Medium · Aug 2026
+- [Building a Shop Admin Panel CRUD in Minutes with fastapi-viewsets](https://medium.com/@chitsalex/building-a-shop-admin-panel-crud-in-minutes-with-fastapi-viewsets-23d23bdcd6b1): Medium · Jun 2026
+- [Add Semantic Search + RAG to Any Django App in 5 Minutes (No Migrations)](https://medium.com/@chitsalex/your-django-app-has-years-of-data-heres-how-to-make-ai-agents-actually-use-it-f6f68eb45b9c): Medium · Jun 2026
+- [I Built a Free AI Assistant for Car Diagnostics, for what?](https://medium.com/@chitsalex/i-built-a-free-ai-assistant-for-car-diagnostics-for-what-164fed024114): Medium · May 2026
+- [Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner](https://dev.to/valenchits/building-a-local-ai-car-diagnostics-assistant-with-gemma-4-obd-ai-scanner-2c97): dev.to · May 2026
+- [We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath](https://dev.to/valenchits/we-shipped-an-mvp-with-vibe-coding-heres-what-nobody-tells-you-about-the-aftermath-3lml): dev.to · Apr 2026
+- [Stop Writing CRUD Boilerplate for FastAPI — Use ViewSets Instead](https://dev.to/valenchits/stop-writing-crud-boilerplate-for-fastapi-use-viewsets-instead-54ek): dev.to · Apr 2026
+
+## Optional
+
+- [fastapi-viewsets](https://pypi.org/project/fastapi-viewsets/): PyPI
+- [django-graph-search](https://pypi.org/project/django-graph-search/): PyPI
+- [llm-cache-router](https://pypi.org/project/llm-cache-router/): PyPI

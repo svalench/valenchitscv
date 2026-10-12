@@ -1,0 +1,88 @@
+# Alexander Valenchits
+
+> Python Django / FastAPI developer. Backend developer, Minsk, Belarus, remote. Tech Lead for LLM and RAG.
+
+Alexander Valenchits — Python Backend Tech Lead & AI Engineer
+
+Backend Tech Lead · AI Engineer · Open-Source Author
+
+Python Django / FastAPI developer. I build backends and applied AI products with LLMs. Engineering since 2014; web development since 2021.
+
+Minsk, Belarus · Open to relocation
+
+Open to work
+
+Alusoft
+
+Minsk
+
+BY
+
+valenchits@icloud.com
+
+- Python
+- Django
+- FastAPI
+- LLM
+- RAG
+- PostgreSQL
+- Docker
+
+- Александр Валенчиц
+- Аляксандр Валенчыц
+- Aliaksandr Valenchits
+- Alexander Valenchits (svalench)
+- svalench
+
+- English
+- Russian
+- Belarusian
+
+## English
+
+- [Alexander Valenchits](https://valenchits.dev/): Python Django / FastAPI developer. Backend developer, Minsk, Belarus, remote. Tech Lead for LLM and RAG.
+
+## Russian
+
+- [Александр Валенчиц](https://valenchits.dev/ru/): Python-разработчик Django/FastAPI, Минск. Backend на FastAPI и Django, удалённо. LLM и RAG.
+
+## Belarusian
+
+- [Аляксандр Валенчыц](https://valenchits.dev/be/): Python-распрацоўшчык Django/FastAPI, Мінск. Backend на FastAPI і Django, аддалена. LLM і RAG.
+
+## Find me on
+
+- [GitHub](https://github.com/svalench): svalench
+- [LinkedIn](https://www.linkedin.com/in/valenchits/): in/valenchits
+- [dev.to](https://dev.to/valenchits): valenchits
+- [Medium](https://medium.com/@chitsalex): @chitsalex
+- [Wellfound](https://wellfound.com/u/valenchits): valenchits
+- [Hirify](https://hirify.me/valenchits): valenchits
+
+## Projects & Open Source
+
+- [AIScanAuto](https://aiscanauto.com): AI car diagnostics combining OBD-II data with plain-language explanations. Platform availability and downloads on the product website.
+- [EchoLang](https://echolang.io): Offline AI voice translator for iPhone — on-device Whisper speech recognition and TranslateGemma translation via MLX. 33 languages, no cloud, no accounts, fully private.
+- [fastapi-viewsets](https://github.com/svalench/fastapi_viewsets): DRF-style ViewSets for FastAPI — auto-generates CRUD endpoints from SQLAlchemy, Tortoise or Peewee models.
+- [django-graph-search](https://github.com/svalench/django_graph_search): Production-ready semantic vector search for Django — traverses FK/M2M relations, RAG-ready, zero migrations.
+- [llm-cache-router](https://github.com/svalench/llm-cache-router): Semantic caching + multi-provider LLM routing with cost tracking — a lightweight production library.
+- [testcaseer](https://github.com/svalench/testcaseer): CLI tool that transforms browser actions into ready-to-use test cases. Stop writing them by hand.
+- [pgadmin-ai-gateway](https://github.com/svalench/pgadmin-ai-gateway): Secure AI-agent connector for pgAdmin with RBAC roles, audit logging and an MCP-compatible interface for PostgreSQL.
+- [pythonSiemens](https://github.com/svalench/pythonSiemens): Industrial tooling from the factory floor: Python ↔ Siemens PLC communication (OPC UA / S7), data logging and vision pipelines.
+
+## Writing
+
+- [fastapi-viewsets vs fastapi-crudrouter: Which CRUD Generator Should You Pick in 2026?](https://medium.com/@chitsalex/fastapi-viewsets-vs-fastapi-crudrouter-which-crud-generator-should-you-pick-in-2026-af5dda530f7c): Medium · Aug 2026
+- [Building a Shop Admin Panel CRUD in Minutes with fastapi-viewsets](https://medium.com/@chitsalex/building-a-shop-admin-panel-crud-in-minutes-with-fastapi-viewsets-23d23bdcd6b1): Medium · Jun 2026
+- [Add Semantic Search + RAG to Any Django App in 5 Minutes (No Migrations)](https://medium.com/@chitsalex/your-django-app-has-years-of-data-heres-how-to-make-ai-agents-actually-use-it-f6f68eb45b9c): Medium · Jun 2026
+- [I Built a Free AI Assistant for Car Diagnostics, for what?](https://medium.com/@chitsalex/i-built-a-free-ai-assistant-for-car-diagnostics-for-what-164fed024114): Medium · May 2026
+- [Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner](https://dev.to/valenchits/building-a-local-ai-car-diagnostics-assistant-with-gemma-4-obd-ai-scanner-2c97): dev.to · May 2026
+- [We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath](https://dev.to/valenchits/we-shipped-an-mvp-with-vibe-coding-heres-what-nobody-tells-you-about-the-aftermath-3lml): dev.to · Apr 2026
+- [Stop Writing CRUD Boilerplate for FastAPI — Use ViewSets Instead](https://dev.to/valenchits/stop-writing-crud-boilerplate-for-fastapi-use-viewsets-instead-54ek): dev.to · Apr 2026
+
+## Optional
+
+- [fastapi-viewsets](https://pypi.org/project/fastapi-viewsets/): PyPI
+- [django-graph-search](https://pypi.org/project/django-graph-search/): PyPI
+- [llm-cache-router](https://pypi.org/project/llm-cache-router/): PyPI
+- [llms-full.txt](https://valenchits.dev/llms-full.txt)

@@ -17,7 +17,7 @@ node scripts/check-seo.mjs
 `dist/` is the deployable output. See [DEPLOY.md](DEPLOY.md) for the existing
 Docker/nginx deployment, proxy redirects, indexing and facts to confirm.
 Translations and career text: `src/i18n.tsx`; links: `src/data.ts`.
-The build generates metadata, structured data, robots.txt and sitemap.xml.
+The build generates metadata, structured data, robots.txt, sitemap.xml, llms.txt and llms-full.txt.
 
 Canonical URLs: `/`, `/ru/`, `/be/`. Languages use regular links and do not
 depend on cookies or localStorage. CV content remains readable without JS.

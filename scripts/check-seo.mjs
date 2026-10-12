@@ -50,7 +50,43 @@ for (const [lang, path, name] of [['en', '/', 'Alexander'], ['ru', '/ru/', 'Ал
 }
 
 const sitemap = await readFile('dist/sitemap.xml', 'utf8')
-assert((await readFile('dist/robots.txt', 'utf8')).includes(`Sitemap: ${base}/sitemap.xml`))
+const robots = await readFile('dist/robots.txt', 'utf8')
+assert(robots.includes(`Sitemap: ${base}/sitemap.xml`))
+assert(robots.includes(`# llms.txt: ${base}/llms.txt`))
+assert(robots.includes(`# llms-full.txt: ${base}/llms-full.txt`))
+const llms = await readFile('dist/llms.txt', 'utf8')
+const llmsFull = await readFile('dist/llms-full.txt', 'utf8')
+assert.equal(llms, await readFile('public/llms.txt', 'utf8'))
+assert.equal(llmsFull, await readFile('public/llms-full.txt', 'utf8'))
+assert.equal(llms.split('\n')[0], '# Alexander Valenchits')
+assert(llms.includes('> Python Django / FastAPI developer. Backend developer, Minsk, Belarus, remote. Tech Lead for LLM and RAG.'))
+assert(llms.includes('## English\n\n- [Alexander Valenchits](https://valenchits.dev/):'))
+assert(llms.includes('## Russian\n\n- [Александр Валенчиц](https://valenchits.dev/ru/):'))
+assert(llms.includes('## Belarusian\n\n- [Аляксандр Валенчыц](https://valenchits.dev/be/):'))
+assert(llms.includes('## Find me on\n'))
+assert(llms.includes('## Projects & Open Source\n'))
+assert(llms.includes('## Writing\n'))
+assert(llms.includes('## Optional\n'))
+for (const url of [
+  'https://github.com/svalench',
+  'https://www.linkedin.com/in/valenchits/',
+  'https://dev.to/valenchits',
+  'https://medium.com/@chitsalex',
+  'https://wellfound.com/u/valenchits',
+  'https://hirify.me/valenchits',
+  'https://aiscanauto.com',
+  'https://echolang.io',
+  'https://github.com/svalench/fastapi_viewsets',
+  'https://github.com/svalench/django_graph_search',
+  'https://github.com/svalench/llm-cache-router',
+  `${base}/llms-full.txt`,
+]) {
+  assert(llms.includes(`](${url})`), url)
+}
+assert(llmsFull.startsWith('# Alexander Valenchits\n'))
+assert(llmsFull.includes('> Python Django / FastAPI developer. Backend developer, Minsk, Belarus, remote. Tech Lead for LLM and RAG.'))
+assert(llmsFull.includes('Python Django / FastAPI developer and backend developer, Minsk, Belarus, remote.'))
+assert(!llmsFull.includes(`${base}/llms-full.txt`))
 assert.equal((sitemap.match(/<loc>/g) || []).length, 3)
 assert(sitemap.includes('xmlns:xhtml="http://www.w3.org/1999/xhtml"'))
 assert(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/.test(sitemap))
@@ -60,4 +96,4 @@ for (const file of ['favicon.ico', 'favicon.svg', 'apple-touch-icon.png', 'icon-
   await access(`dist/${file}`)
 }
 assert((await stat('dist/og.jpg')).size < 150 * 1024)
-console.log('PASS: three prerendered locales, headings, projects, canonical, hreflang, JSON-LD, assets, robots, sitemap and 404 metadata')
+console.log('PASS: three prerendered locales, headings, projects, canonical, hreflang, JSON-LD, assets, robots, sitemap, llms.txt and 404 metadata')

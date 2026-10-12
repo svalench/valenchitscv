@@ -1,16 +1,11 @@
-# SEO-фиксы valenchits.dev
+# llms.txt
 
-- H1: пробел между именем и фамилией на en/ru/be
-- sitemap: lastmod + xhtml:link hreflang
-- favicon, apple-touch-icon, manifest, theme-color
-- JSON-LD: расширенный Person + WebSite
-- OG: locale, site_name, 1200×630 og.jpg, width/height
-- Шрифты: @fontsource, font-display: swap, без Google Fonts
-- hero/about: avif + webp + srcset
-- Неиспользуемый UI-kit и Radix удалены
-- nginx: gzip, brotli, кэш, security headers, www → apex одним хопом
-- Сборка и check-seo проходят; консоль / /ru/ /be/ без ошибок
-- P3 (отдельные страницы проектов) не делался: это новые маршруты, не мелкая правка
-- X/Twitter в sameAs не добавлен: публичного аккаунта нет
+- `public/llms.txt` и `public/llms-full.txt` собираются в prerender из словарей, data.ts и полей JSON-LD
+- H1: Alexander Valenchits. Blockquote: meta description
+- Секции: English / Russian / Belarusian, Find me on, Projects & Open Source, Writing, Optional
+- Ссылки: /, /ru/, /be/, профили sameAs, проекты JSON-LD и остальные карточки, статьи, PyPI
+- nginx отдаёт оба файла как `text/plain; charset=utf-8`, security headers на месте
+- robots.txt: комментарии `# llms.txt` и `# llms-full.txt`
+- `npm run build`, lint и check-seo проходят; файлы есть в `dist` и совпадают с `public`
 
 DONE

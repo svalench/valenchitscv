@@ -13,6 +13,7 @@ const jsonLd = (value) => JSON.stringify(value).replaceAll('<', '\\u003c')
 const server = await createServer({ server: { middlewareMode: true }, appType: 'custom' })
 try {
   const { render } = await server.ssrLoadModule('/src/prerender.tsx')
+  const { buildLlmsTxt, buildLlmsFullTxt } = await server.ssrLoadModule('/src/llms.ts')
   const template = await readFile('dist/index.html', 'utf8')
   const pages = []
   for (const lang of langs) {
@@ -21,7 +22,7 @@ try {
   }
 
   for (const page of pages) {
-    const title = `${page.name} — Python Backend Tech Lead & AI Engineer`
+    const title = page.title
     const person = {
       '@type': 'Person',
       '@id': `${base}/#person`,
@@ -43,7 +44,7 @@ try {
         '@type': 'ContactPoint',
         contactType: 'professional',
         email: page.email,
-        availableLanguage: ['English', 'Russian', 'Belarusian'],
+        availableLanguage: page.availableLanguages,
         url: 'https://www.linkedin.com/in/valenchits/',
       },
       sameAs: page.sameAs,
@@ -104,7 +105,17 @@ try {
     'dist/sitemap.xml',
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls}\n</urlset>\n`,
   )
-  await writeFile('dist/robots.txt', `User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml\n`)
+  // Комментарии в robots.txt не директивы: указывают агентам на llms.txt рядом с Allow.
+  const llmsTxt = buildLlmsTxt()
+  const llmsFullTxt = buildLlmsFullTxt()
+  await writeFile('public/llms.txt', llmsTxt)
+  await writeFile('public/llms-full.txt', llmsFullTxt)
+  await writeFile('dist/llms.txt', llmsTxt)
+  await writeFile('dist/llms-full.txt', llmsFullTxt)
+  await writeFile(
+    'dist/robots.txt',
+    `# llms.txt: ${base}/llms.txt\n# llms-full.txt: ${base}/llms-full.txt\nUser-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml\n`,
+  )
   await writeFile(
     'dist/404.html',
     '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>404 — Page not found</title></head><body><main><h1>404 — Page not found</h1><a href="/">Alexander Valenchits — Home</a></main></body></html>',

@@ -20,6 +20,7 @@ The Docker image builds ngx_brotli. On a host nginx without that module,
 comment out the `brotli` lines in `nginx.conf` before reloading.
 
 After deployment verify `/`, `/ru/`, `/be/`, `/robots.txt`, `/sitemap.xml`,
+`/llms.txt` and `/llms-full.txt` (`Content-Type: text/plain; charset=utf-8`),
 a nonexistent path (404), and `https://www.valenchits.dev/` (301).
 Use View Source to confirm the CV text is present without JavaScript.
 

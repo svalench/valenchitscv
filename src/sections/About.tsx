@@ -1,5 +1,5 @@
 import { useLang } from '../i18n'
-import { personNames } from '../locales'
+import { aboutBadges, personNames } from '../locales'
 import SectionHead from './SectionHead'
 
 export default function About() {
@@ -37,8 +37,8 @@ export default function About() {
             <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-t from-black/40 to-transparent" />
           </div>
           <div className="absolute -bottom-4 left-6 rounded-2xl border border-white/10 bg-[#141418]/85 px-5 py-3 shadow-2xl backdrop-blur-md">
-            <p className="font-mono2 text-[11px] uppercase tracking-widest text-[#ff5a1f]">Tech Lead · AI Engineer</p>
-            <p className="mt-0.5 text-sm font-medium text-white/80">Minsk → Worldwide</p>
+            <p className="font-mono2 text-[11px] uppercase tracking-widest text-[#ff5a1f]">{aboutBadges.role}</p>
+            <p className="mt-0.5 text-sm font-medium text-white/80">{aboutBadges.reach}</p>
           </div>
         </div>
 
