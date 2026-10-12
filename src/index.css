@@ -227,7 +227,6 @@ section { scroll-margin-top: 100px; }
   #root .grid { display: block !important; }
   #root h1 { font-size: 26pt !important; line-height: 1.2 !important; }
   #root h1 br { display: none; }
-  #root h1 span::before { content: ' '; }
   #root h2 { font-size: 17pt !important; }
   #root h3 { break-after: avoid; }
   #root p, #root li, #root a { font-size: 10pt !important; }

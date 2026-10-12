@@ -1,3 +1,5 @@
+/* Словари и провайдер живут вместе: правило fast-refresh ругается на смешанный экспорт. */
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, type ReactNode } from 'react'
 
 export type Lang = 'en' | 'ru' | 'be'
@@ -71,7 +73,7 @@ const en: Translation = {
   hero: {
     badge: 'Open to work',
     role: 'Backend Tech Lead · AI Engineer · Open-Source Author',
-    tagline: "I build Python backends and applied AI products with FastAPI, Django and LLMs. Engineering since 2014; web development since 2021.",
+    tagline: 'Python Django / FastAPI developer. I build backends and applied AI products with LLMs. Engineering since 2014; web development since 2021.',
     location: 'Minsk, Belarus · Open to relocation',
     ctaContact: 'Get in touch',
     ctaGithub: 'GitHub',
@@ -85,7 +87,7 @@ const en: Translation = {
   about: {
     label: 'About me',
     heading: 'Engineering leader who ships AI products',
-    p1: "Tech Lead and AI Engineer with an engineering career spanning electronics, industrial automation and software since 2014. Since 2021, I have focused on Python and JavaScript web development. At MVLab, I connected Siemens PLCs, Linux servers and Python backends on factory floors. Today I build backend systems and applied AI products.",
+    p1: 'Python Django / FastAPI developer and backend developer, Minsk, Belarus, remote. Tech Lead and AI Engineer with an engineering career spanning electronics, industrial automation and software since 2014. Since 2021, I have focused on Python and JavaScript web development. At MVLab, I connected Siemens PLCs, Linux servers and Python backends on factory floors. Today I build backend systems and applied AI products.',
     p2: 'I run technical interviews and code reviews, and make architecture decisions grounded in domain-driven design. I value autonomy, measurable outcomes and a seat at the table when product decisions are made.',
     interestsLabel: 'What drives me',
     interests: ['Complex architecture', 'Model inference optimization', 'AI automation', 'Open source', 'Product thinking', 'Mentoring'],
@@ -215,7 +217,7 @@ const ru: Translation = {
   hero: {
     badge: 'Открыт к предложениям',
     role: 'Backend Tech Lead · AI-инженер · автор open source',
-    tagline: "Разрабатываю backend на Python и прикладные AI-продукты с FastAPI, Django и LLM. В инженерии с 2014 года, в веб-разработке — с 2021.",
+    tagline: 'Python-разработчик Django/FastAPI, Минск. Разрабатываю backend и прикладные AI-продукты с LLM. В инженерии с 2014 года, в веб-разработке — с 2021.',
     location: 'Минск, Беларусь · Готов к релокации',
     ctaContact: 'Связаться',
     ctaGithub: 'GitHub',
@@ -229,7 +231,7 @@ const ru: Translation = {
   about: {
     label: 'Обо мне',
     heading: 'Инженерный лидер, который выпускает AI-продукты',
-    p1: "Tech Lead и AI-инженер. С 2014 года работаю в инженерии: электроника, промышленная автоматизация и программное обеспечение. С 2021 года специализируюсь на веб-разработке на Python и JavaScript. В MVLab связывал PLC Siemens, Linux-серверы и Python-backend на производстве; сейчас создаю backend-системы и прикладные AI-продукты.",
+    p1: 'Python-разработчик Django/FastAPI, Минск. Tech Lead и AI-инженер. С 2014 года работаю в инженерии: электроника, промышленная автоматизация и программное обеспечение. С 2021 года специализируюсь на веб-разработке на Python и JavaScript. В MVLab связывал PLC Siemens, Linux-серверы и Python-backend на производстве; сейчас создаю backend-системы и прикладные AI-продукты.',
     p2: 'Провожу технические интервью и код-ревью, принимаю архитектурные решения на основе domain-driven design. Ценю автономию, измеримые результаты и участие в продуктовых решениях — а не просто закрытие тикетов.',
     interestsLabel: 'Что меня вдохновляет',
     interests: ['Сложная архитектура', 'Оптимизация инференса моделей', 'AI-автоматизация', 'Открытый код', 'Продуктовое мышление', 'Менторство'],
@@ -359,7 +361,7 @@ const be: Translation = {
   hero: {
     badge: 'Адкрыты да прапаноў',
     role: 'Backend Tech Lead · AI-інжынер · аўтар open source',
-    tagline: "Распрацоўваю backend на Python і прыкладныя AI-прадукты з FastAPI, Django і LLM. У інжынерыі з 2014 года, у вэб-распрацоўцы — з 2021.",
+    tagline: 'Python-распрацоўшчык Django/FastAPI, Мінск. Распрацоўваю backend і прыкладныя AI-прадукты з LLM. У інжынерыі з 2014 года, у вэб-распрацоўцы — з 2021.',
     location: 'Мінск, Беларусь · Гатовы да рэлакацыі',
     ctaContact: 'Звязацца',
     ctaGithub: 'GitHub',
@@ -373,7 +375,7 @@ const be: Translation = {
   about: {
     label: 'Пра мяне',
     heading: 'Інжынерны лідар, які выпускае AI-прадукты',
-    p1: "Tech Lead і AI-інжынер. З 2014 года працую ў інжынерыі: электроніка, прамысловая аўтаматызацыя і праграмнае забеспячэнне. З 2021 года спецыялізуюся на вэб-распрацоўцы на Python і JavaScript. У MVLab злучаў PLC Siemens, Linux-серверы і Python-backend на вытворчасці; цяпер ствараю backend-сістэмы і прыкладныя AI-прадукты.",
+    p1: 'Python-распрацоўшчык Django/FastAPI, Мінск. Tech Lead і AI-інжынер. З 2014 года працую ў інжынерыі: электроніка, прамысловая аўтаматызацыя і праграмнае забеспячэнне. З 2021 года спецыялізуюся на вэб-распрацоўцы на Python і JavaScript. У MVLab злучаў PLC Siemens, Linux-серверы і Python-backend на вытворчасці; цяпер ствараю backend-сістэмы і прыкладныя AI-прадукты.',
     p2: 'Праводжу тэхнічныя сумоўі і код-рэв’ю, прымаю архітэктурныя рашэнні на аснове domain-driven design. Цаню аўтаномію, вымерныя вынікі і ўдзел у прадуктовых рашэннях, а не проста закрыццё тыкетаў.',
     interestsLabel: 'Што мяне натхняе',
     interests: ['Складаная архітэктура', 'Аптымізацыя інферэнсу мадэляў', 'AI-аўтаматызацыя', 'Адкрыты код', 'Прадуктовае мысленне', 'Ментарства'],

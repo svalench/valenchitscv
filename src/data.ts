@@ -7,6 +7,22 @@ export const links = {
   hirify: 'https://hirify.me/valenchits',
 }
 
+export const profile = {
+  email: 'valenchits@icloud.com',
+  jobTitle: 'Python Backend Tech Lead & AI Engineer',
+  worksFor: 'Alusoft',
+  addressLocality: 'Minsk',
+  addressCountry: 'BY',
+  knowsAbout: ['Python', 'Django', 'FastAPI', 'LLM', 'RAG', 'PostgreSQL', 'Docker'],
+  projects: [
+    'https://aiscanauto.com',
+    'https://echolang.io',
+    'https://github.com/svalench/fastapi_viewsets',
+    'https://github.com/svalench/django_graph_search',
+    'https://github.com/svalench/llm-cache-router',
+  ],
+}
+
 export interface ProjectMeta {
   name: string
   url: string

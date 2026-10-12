@@ -1,8 +1,9 @@
 import { useLang } from '../i18n'
+import { personNames } from '../locales'
 import SectionHead from './SectionHead'
 
 export default function About() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
 
   return (
     <section id="about" className="border-t border-white/10 px-6 py-20 md:px-12 lg:py-28">
@@ -12,7 +13,27 @@ export default function About() {
         {/* photo */}
         <div className="reveal relative">
           <div className="overflow-hidden rounded-3xl border border-white/10">
-            <img src="/img/about.jpg" loading="lazy" alt="Alexander Valenchits" className="aspect-square w-full object-cover object-top" />
+            <picture>
+              <source
+                type="image/avif"
+                srcSet="/img/about-450.avif 450w, /img/about-900.avif 900w"
+                sizes="(min-width: 1024px) 460px, 100vw"
+              />
+              <source
+                type="image/webp"
+                srcSet="/img/about-450.webp 450w, /img/about-900.webp 900w"
+                sizes="(min-width: 1024px) 460px, 100vw"
+              />
+              <img
+                src="/img/about.jpg"
+                width={900}
+                height={900}
+                loading="lazy"
+                decoding="async"
+                alt={personNames[lang]}
+                className="aspect-square w-full object-cover object-top"
+              />
+            </picture>
             <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-t from-black/40 to-transparent" />
           </div>
           <div className="absolute -bottom-4 left-6 rounded-2xl border border-white/10 bg-[#141418]/85 px-5 py-3 shadow-2xl backdrop-blur-md">

@@ -11,6 +11,14 @@ The existing TLS proxy must forward the original Host header. If it overwrites
 Host, configure the www → https://valenchits.dev redirect at that proxy instead.
 Keep the existing HTTP → HTTPS redirect. No DNS changes are required.
 
+`http://www` and `https://www` must redirect in one hop to
+`https://valenchits.dev$request_uri`. The container already does that for
+`Host: www.valenchits.dev` on port 80. A proxy that first upgrades
+`http://www` to `https://www` adds a second hop — change that proxy redirect.
+
+The Docker image builds ngx_brotli. On a host nginx without that module,
+comment out the `brotli` lines in `nginx.conf` before reloading.
+
 After deployment verify `/`, `/ru/`, `/be/`, `/robots.txt`, `/sitemap.xml`,
 a nonexistent path (404), and `https://www.valenchits.dev/` (301).
 Use View Source to confirm the CV text is present without JavaScript.
