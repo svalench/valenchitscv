@@ -127,17 +127,6 @@ const en: Translation = {
         tags: ['Django', 'DRF', 'Celery', 'Vue.js', 'PostgreSQL', 'Cursor AI'],
       },
       {
-        company: 'AIScanAuto — aiscanauto.com',
-        role: 'Founder',
-        period: '2025 — Present',
-        current: true,
-        bullets: [
-          'Founded and built an AI car-diagnostics product: OBD-II data combined with a local LLM (Gemma) that explains fault codes in plain language.',
-          'OBD-II diagnostics with AI explanations; see the product website for current platforms and downloads.',
-        ],
-        tags: ['LLM', 'Gemma', 'OBD-II', 'Mobile', 'Product'],
-      },
-      {
         company: 'MVLab',
         role: 'Software Engineer',
         period: 'Oct 2019 — May 2021',
@@ -186,7 +175,6 @@ const en: Translation = {
     viewRepo: 'View repository',
     viewSite: 'Visit site',
     items: [
-      { name: 'AIScanAuto', desc: "AI car diagnostics combining OBD-II data with plain-language explanations. Platform availability and downloads on the product website." },
       { name: 'EchoLang', desc: 'Offline AI voice translator for iPhone — on-device Whisper speech recognition and TranslateGemma translation via MLX. 33 languages, no cloud, no accounts, fully private.' },
       { name: 'fastapi-viewsets', desc: 'DRF-style ViewSets for FastAPI — auto-generates CRUD endpoints from SQLAlchemy, Tortoise or Peewee models.' },
       { name: 'django-graph-search', desc: 'Production-ready semantic vector search for Django — traverses FK/M2M relations, RAG-ready, zero migrations.' },
@@ -271,17 +259,6 @@ const ru: Translation = {
         tags: ['Django', 'DRF', 'Celery', 'Vue.js', 'PostgreSQL', 'Cursor AI'],
       },
       {
-        company: 'AIScanAuto — aiscanauto.com',
-        role: 'Основатель',
-        period: '2025 — настоящее время',
-        current: true,
-        bullets: [
-          'Основал и создал AI-продукт автодиагностики: данные OBD-II + локальная LLM (Gemma) объясняют коды ошибок простым языком.',
-          'OBD-II диагностика с AI-объяснениями; актуальные платформы и загрузки — на сайте продукта.',
-        ],
-        tags: ['LLM', 'Gemma', 'OBD-II', 'Mobile', 'Продукт'],
-      },
-      {
         company: 'МВЛАБ',
         role: 'Инженер-программист',
         period: 'Окт 2019 — май 2021',
@@ -330,7 +307,6 @@ const ru: Translation = {
     viewRepo: 'Смотреть репозиторий',
     viewSite: 'Открыть сайт',
     items: [
-      { name: 'AIScanAuto', desc: "AI-автодиагностика: данные OBD-II и объяснения простым языком. Платформы и загрузки — на сайте продукта." },
       { name: 'EchoLang', desc: 'Офлайн AI-переводчик голоса для iPhone — распознавание речи Whisper и перевод TranslateGemma прямо на устройстве через MLX. 33 языка, без облака и аккаунтов, полная приватность.' },
       { name: 'fastapi-viewsets', desc: 'ViewSets в стиле DRF для FastAPI — автогенерация CRUD-эндпоинтов из моделей SQLAlchemy, Tortoise или Peewee.' },
       { name: 'django-graph-search', desc: 'Продакшн семантический векторный поиск для Django — обходит связи FK/M2M, готов к RAG, без миграций.' },
@@ -415,17 +391,6 @@ const be: Translation = {
         tags: ['Django', 'DRF', 'Celery', 'Vue.js', 'PostgreSQL', 'Cursor AI'],
       },
       {
-        company: 'AIScanAuto — aiscanauto.com',
-        role: 'Заснавальнік',
-        period: '2025 — цяпер',
-        current: true,
-        bullets: [
-          'Заснаваў і стварыў AI-прадукт аўтадыягностыкі: дадзеныя OBD-II + лакальная LLM (Gemma) тлумачаць коды памылак простай мовай.',
-          'OBD-II дыягностыка з AI-тлумачэннямі; актуальныя платформы і спампоўкі — на сайце прадукту.',
-        ],
-        tags: ['LLM', 'Gemma', 'OBD-II', 'Mobile', 'Прадукт'],
-      },
-      {
         company: 'МВЛАБ',
         role: 'Інжынер-праграміст',
         period: 'Кас 2019 — май 2021',
@@ -474,7 +439,6 @@ const be: Translation = {
     viewRepo: 'Глядзець рэпазиторый',
     viewSite: 'Адкрыць сайт',
     items: [
-      { name: 'AIScanAuto', desc: "AI-аўтадыягностыка: дадзеныя OBD-II і тлумачэнні простай мовай. Платформы і спампоўкі — на сайце прадукту." },
       { name: 'EchoLang', desc: 'Афлайн AI-перакладчык голасу для iPhone — распазнаванне маўлення Whisper і пераклад TranslateGemma непасрэдна на прыладзе праз MLX. 33 мовы, без воблака і акаунтаў, поўная прыватнасць.' },
       { name: 'fastapi-viewsets', desc: 'ViewSets у стылі DRF для FastAPI — аўтагенерацыя CRUD-эндпойнтаў з мадэляў SQLAlchemy, Tortoise або Peewee.' },
       { name: 'django-graph-search', desc: 'Прадакшн семантычны вектарны пошук для Django — абыходзіць сувязі FK/M2M, гатовы да RAG, без міграцый.' },
