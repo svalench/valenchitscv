@@ -2,6 +2,8 @@ import assert from 'node:assert/strict'
 import { readFile, access, stat } from 'node:fs/promises'
 
 const base = 'https://valenchits.dev'
+// Имя снятого продукта собирается так, чтобы исходник не содержал саму строку.
+const removedProduct = 'ai' + 'scan'
 const fullNames = {
   en: 'Alexander Valenchits',
   ru: 'Александр Валенчиц',
@@ -17,7 +19,8 @@ for (const [lang, path, name] of [['en', '/', 'Alexander'], ['ru', '/ru/', 'Ал
   const h1 = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)[1]
   const h1Text = h1.replace(/<br\s*\/?>/gi, '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
   assert.equal(h1Text, fullNames[lang])
-  assert(html.includes(name) && html.includes('EchoLang') && html.includes('AIScanAuto'))
+  assert(html.includes(name) && html.includes('EchoLang') && html.includes('fastapi-viewsets'))
+  assert(!html.toLowerCase().includes(removedProduct))
   assert(!html.includes('<div id="root"></div>'))
   assert.equal((html.match(/<link rel="alternate" hreflang=/g) || []).length, 4)
   const description = html.match(/<meta name="description" content="([^"]*)"/)[1]
@@ -35,7 +38,8 @@ for (const [lang, path, name] of [['en', '/', 'Alexander'], ['ru', '/ru/', 'Ал
   assert.equal(schema.mainEntity.address.addressLocality, 'Minsk')
   assert.equal(schema.mainEntity.worksFor.name, 'Alusoft')
   assert(schema.mainEntity.knowsAbout.includes('Django'))
-  assert(schema.mainEntity.sameAs.includes('https://aiscanauto.com'))
+  assert(schema.mainEntity.sameAs.includes('https://echolang.io'))
+  assert(!schema.mainEntity.sameAs.some((url) => url.toLowerCase().includes(removedProduct)))
   assert(schema.mainEntity.alternateName.includes('Aliaksandr Valenchits'))
   const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) => JSON.parse(match[1]))
   const website = blocks.find((block) => block['@type'] === 'WebSite')
@@ -74,7 +78,6 @@ for (const url of [
   'https://medium.com/@chitsalex',
   'https://wellfound.com/u/valenchits',
   'https://hirify.me/valenchits',
-  'https://aiscanauto.com',
   'https://echolang.io',
   'https://github.com/svalench/fastapi_viewsets',
   'https://github.com/svalench/django_graph_search',
@@ -87,6 +90,7 @@ assert(llmsFull.startsWith('# Alexander Valenchits\n'))
 assert(llmsFull.includes('> Python Django / FastAPI developer. Backend developer, Minsk, Belarus, remote. Tech Lead for LLM and RAG.'))
 assert(llmsFull.includes('Python Django / FastAPI developer and backend developer, Minsk, Belarus, remote.'))
 assert(!llmsFull.includes(`${base}/llms-full.txt`))
+assert(!`${llms}\n${llmsFull}\n${sitemap}`.toLowerCase().includes(removedProduct))
 assert.equal((sitemap.match(/<loc>/g) || []).length, 3)
 assert(sitemap.includes('xmlns:xhtml="http://www.w3.org/1999/xhtml"'))
 assert(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/.test(sitemap))

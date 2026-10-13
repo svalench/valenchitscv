@@ -143,21 +143,6 @@ May 2021 — Jun 2025
 - PostgreSQL
 - Cursor AI
 
-AIScanAuto — aiscanauto.com
-
-Founder
-
-2025 — Present
-
-- Founded and built an AI car-diagnostics product: OBD-II data combined with a local LLM (Gemma) that explains fault codes in plain language.
-- OBD-II diagnostics with AI explanations; see the product website for current platforms and downloads.
-
-- LLM
-- Gemma
-- OBD-II
-- Mobile
-- Product
-
 MVLab
 
 Software Engineer
@@ -251,10 +236,6 @@ Products, libraries & tools
 
 Production-grade open source and shipped AI products — published on GitHub and PyPI, in the App Store, written about on Medium and dev.to.
 
-AIScanAuto
-
-AI car diagnostics combining OBD-II data with plain-language explanations. Platform availability and downloads on the product website.
-
 EchoLang
 
 Offline AI voice translator for iPhone — on-device Whisper speech recognition and TranslateGemma translation via MLX. 33 languages, no cloud, no accounts, fully private.
@@ -300,14 +281,6 @@ Medium · Jun 2026
 Add Semantic Search + RAG to Any Django App in 5 Minutes (No Migrations)
 
 Medium · Jun 2026
-
-I Built a Free AI Assistant for Car Diagnostics, for what?
-
-Medium · May 2026
-
-Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner
-
-dev.to · May 2026
 
 We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath
 
@@ -436,21 +409,6 @@ Backend Tech Lead
 - PostgreSQL
 - Cursor AI
 
-AIScanAuto — aiscanauto.com
-
-Основатель
-
-2025 — настоящее время
-
-- Основал и создал AI-продукт автодиагностики: данные OBD-II + локальная LLM (Gemma) объясняют коды ошибок простым языком.
-- OBD-II диагностика с AI-объяснениями; актуальные платформы и загрузки — на сайте продукта.
-
-- LLM
-- Gemma
-- OBD-II
-- Mobile
-- Продукт
-
 МВЛАБ
 
 Инженер-программист
@@ -544,10 +502,6 @@ Frontend
 
 Продакшн-уровень open source и выпущенные AI-продукты — GitHub, PyPI, App Store, статьи на Medium и dev.to.
 
-AIScanAuto
-
-AI-автодиагностика: данные OBD-II и объяснения простым языком. Платформы и загрузки — на сайте продукта.
-
 EchoLang
 
 Офлайн AI-переводчик голоса для iPhone — распознавание речи Whisper и перевод TranslateGemma прямо на устройстве через MLX. 33 языка, без облака и аккаунтов, полная приватность.
@@ -593,14 +547,6 @@ Medium · Jun 2026
 Add Semantic Search + RAG to Any Django App in 5 Minutes (No Migrations)
 
 Medium · Jun 2026
-
-I Built a Free AI Assistant for Car Diagnostics, for what?
-
-Medium · May 2026
-
-Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner
-
-dev.to · May 2026
 
 We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath
 
@@ -729,21 +675,6 @@ Backend Tech Lead
 - PostgreSQL
 - Cursor AI
 
-AIScanAuto — aiscanauto.com
-
-Заснавальнік
-
-2025 — цяпер
-
-- Заснаваў і стварыў AI-прадукт аўтадыягностыкі: дадзеныя OBD-II + лакальная LLM (Gemma) тлумачаць коды памылак простай мовай.
-- OBD-II дыягностыка з AI-тлумачэннямі; актуальныя платформы і спампоўкі — на сайце прадукту.
-
-- LLM
-- Gemma
-- OBD-II
-- Mobile
-- Прадукт
-
 МВЛАБ
 
 Інжынер-праграміст
@@ -837,10 +768,6 @@ Frontend
 
 Open source прадакшн-ўзроўню і выпушчаныя AI-прадукты — GitHub, PyPI, App Store, артыкулы на Medium і dev.to.
 
-AIScanAuto
-
-AI-аўтадыягностыка: дадзеныя OBD-II і тлумачэнні простай мовай. Платформы і спампоўкі — на сайце прадукту.
-
 EchoLang
 
 Афлайн AI-перакладчык голасу для iPhone — распазнаванне маўлення Whisper і пераклад TranslateGemma непасрэдна на прыладзе праз MLX. 33 мовы, без воблака і акаунтаў, поўная прыватнасць.
@@ -887,14 +814,6 @@ Add Semantic Search + RAG to Any Django App in 5 Minutes (No Migrations)
 
 Medium · Jun 2026
 
-I Built a Free AI Assistant for Car Diagnostics, for what?
-
-Medium · May 2026
-
-Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner
-
-dev.to · May 2026
-
 We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath
 
 dev.to · Apr 2026
@@ -940,7 +859,6 @@ Tech Lead & AI Engineer
 
 ## Projects & Open Source
 
-- [AIScanAuto](https://aiscanauto.com): AI car diagnostics combining OBD-II data with plain-language explanations. Platform availability and downloads on the product website.
 - [EchoLang](https://echolang.io): Offline AI voice translator for iPhone — on-device Whisper speech recognition and TranslateGemma translation via MLX. 33 languages, no cloud, no accounts, fully private.
 - [fastapi-viewsets](https://github.com/svalench/fastapi_viewsets): DRF-style ViewSets for FastAPI — auto-generates CRUD endpoints from SQLAlchemy, Tortoise or Peewee models.
 - [django-graph-search](https://github.com/svalench/django_graph_search): Production-ready semantic vector search for Django — traverses FK/M2M relations, RAG-ready, zero migrations.
@@ -954,8 +872,6 @@ Tech Lead & AI Engineer
 - [fastapi-viewsets vs fastapi-crudrouter: Which CRUD Generator Should You Pick in 2026?](https://medium.com/@chitsalex/fastapi-viewsets-vs-fastapi-crudrouter-which-crud-generator-should-you-pick-in-2026-af5dda530f7c): Medium · Aug 2026
 - [Building a Shop Admin Panel CRUD in Minutes with fastapi-viewsets](https://medium.com/@chitsalex/building-a-shop-admin-panel-crud-in-minutes-with-fastapi-viewsets-23d23bdcd6b1): Medium · Jun 2026
 - [Add Semantic Search + RAG to Any Django App in 5 Minutes (No Migrations)](https://medium.com/@chitsalex/your-django-app-has-years-of-data-heres-how-to-make-ai-agents-actually-use-it-f6f68eb45b9c): Medium · Jun 2026
-- [I Built a Free AI Assistant for Car Diagnostics, for what?](https://medium.com/@chitsalex/i-built-a-free-ai-assistant-for-car-diagnostics-for-what-164fed024114): Medium · May 2026
-- [Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner](https://dev.to/valenchits/building-a-local-ai-car-diagnostics-assistant-with-gemma-4-obd-ai-scanner-2c97): dev.to · May 2026
 - [We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath](https://dev.to/valenchits/we-shipped-an-mvp-with-vibe-coding-heres-what-nobody-tells-you-about-the-aftermath-3lml): dev.to · Apr 2026
 - [Stop Writing CRUD Boilerplate for FastAPI — Use ViewSets Instead](https://dev.to/valenchits/stop-writing-crud-boilerplate-for-fastapi-use-viewsets-instead-54ek): dev.to · Apr 2026
 

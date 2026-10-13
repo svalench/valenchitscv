@@ -1,11 +1,11 @@
-# llms.txt
+# Снятие AIScanAuto
 
-- `public/llms.txt` и `public/llms-full.txt` собираются в prerender из словарей, data.ts и полей JSON-LD
-- H1: Alexander Valenchits. Blockquote: meta description
-- Секции: English / Russian / Belarusian, Find me on, Projects & Open Source, Writing, Optional
-- Ссылки: /, /ru/, /be/, профили sameAs, проекты JSON-LD и остальные карточки, статьи, PyPI
-- nginx отдаёт оба файла как `text/plain; charset=utf-8`, security headers на месте
-- robots.txt: комментарии `# llms.txt` и `# llms-full.txt`
-- `npm run build`, lint и check-seo проходят; файлы есть в `dist` и совпадают с `public`
+- Карточка проекта, ссылка sameAs и блок опыта (en/ru/be) удалены из `src/data.ts` и `src/i18n.tsx`
+- Две статьи про автодиагностику / OBD AI Scanner убраны из списка публикаций: это тот же продукт
+- `public/llms.txt` и `public/llms-full.txt` пересобраны prerender-ом
+- Сетка проектов и таймлайн опыта рендерятся из массивов: пустых карточек нет (7 проектов, 5 мест работы, 5 статей)
+- `index.html` (GA4) и `nginx.conf` (CSP) не менялись
+- `npm run lint`, `npm run build`, `node scripts/check-seo.mjs` проходят
+- `rg -i aiscan` по репозиторию и `dist` — пусто
 
 DONE

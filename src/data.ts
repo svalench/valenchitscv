@@ -15,7 +15,6 @@ export const profile = {
   addressCountry: 'BY',
   knowsAbout: ['Python', 'Django', 'FastAPI', 'LLM', 'RAG', 'PostgreSQL', 'Docker'],
   projects: [
-    'https://aiscanauto.com',
     'https://echolang.io',
     'https://github.com/svalench/fastapi_viewsets',
     'https://github.com/svalench/django_graph_search',
@@ -33,7 +32,6 @@ export interface ProjectMeta {
 }
 
 export const projectsMeta: ProjectMeta[] = [
-  { name: 'AIScanAuto', url: 'https://aiscanauto.com/', product: 'AI product', language: 'AI · OBD-II', featured: true },
   { name: 'EchoLang', url: 'https://echolang.io/', product: 'iOS App', language: 'Swift · iOS', featured: true },
   { name: 'fastapi-viewsets', url: 'https://github.com/svalench/fastapi_viewsets', pypi: 'https://pypi.org/project/fastapi-viewsets/', language: 'Python', featured: true },
   { name: 'django-graph-search', url: 'https://github.com/svalench/django_graph_search', pypi: 'https://pypi.org/project/django-graph-search/', language: 'Python', featured: true },
@@ -68,18 +66,6 @@ export const articles: Article[] = [
     url: 'https://medium.com/@chitsalex/your-django-app-has-years-of-data-heres-how-to-make-ai-agents-actually-use-it-f6f68eb45b9c',
     source: 'Medium',
     date: 'Jun 2026',
-  },
-  {
-    title: 'I Built a Free AI Assistant for Car Diagnostics, for what?',
-    url: 'https://medium.com/@chitsalex/i-built-a-free-ai-assistant-for-car-diagnostics-for-what-164fed024114',
-    source: 'Medium',
-    date: 'May 2026',
-  },
-  {
-    title: 'Building a Local AI Car Diagnostics Assistant with Gemma 4: OBD AI Scanner',
-    url: 'https://dev.to/valenchits/building-a-local-ai-car-diagnostics-assistant-with-gemma-4-obd-ai-scanner-2c97',
-    source: 'dev.to',
-    date: 'May 2026',
   },
   {
     title: "We Shipped an MVP With Vibe-Coding. Here's What Nobody Tells You About the Aftermath",
