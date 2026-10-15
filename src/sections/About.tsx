@@ -1,5 +1,6 @@
 import { useLang } from '../i18n'
-import { aboutBadges, personNames } from '../locales'
+import { aboutBadges, emphasisPhrases, imageAlts } from '../locales'
+import Emphasize from '../emphasize'
 import SectionHead from './SectionHead'
 
 export default function About() {
@@ -30,7 +31,7 @@ export default function About() {
                 height={900}
                 loading="lazy"
                 decoding="async"
-                alt={personNames[lang]}
+                alt={imageAlts[lang].about}
                 className="aspect-square w-full object-cover object-top"
               />
             </picture>
@@ -43,8 +44,23 @@ export default function About() {
         </div>
 
         <div>
-          <p className="reveal text-[15px] leading-relaxed text-white/75">{t.about.p1}</p>
-          <p className="reveal mt-5 text-[15px] leading-relaxed text-white/75">{t.about.p2}</p>
+          <p className="reveal text-[15px] leading-relaxed text-white/75">
+            <Emphasize text={t.about.p1} marks={emphasisPhrases[lang]} />
+          </p>
+          <p className="reveal mt-5 text-[15px] leading-relaxed text-white/75">
+            <Emphasize text={t.about.p2} marks={emphasisPhrases[lang]} />
+          </p>
+          <p className="reveal mt-5 text-[15px] leading-relaxed text-white/75">
+            {t.explore.lead}
+            <a href="#experience" className="text-link">{t.explore.experience}</a>
+            {t.explore.afterExperience}
+            <a href="#stack" className="text-link">{t.explore.stack}</a>
+            {t.explore.afterStack}
+            <a href="#projects" className="text-link">{t.explore.projects}</a>
+            {t.explore.afterProjects}
+            <a href="#writing" className="text-link">{t.explore.writing}</a>
+            {t.explore.tail}
+          </p>
 
           {/* interests */}
           <p className="reveal mt-9 mb-4 font-mono2 text-xs uppercase tracking-[0.25em] text-[#ff5a1f]">
@@ -73,7 +89,7 @@ export default function About() {
                   <span className="text-xs text-white/75">{l.level}</span>
                 </div>
                 <div className="h-1.5 overflow-hidden rounded-full bg-white/10">
-                  <div className="accent-gradient h-full rounded-full" style={{ width: `${l.pct}%` }} />
+                  <div className={`accent-gradient h-full rounded-full ${l.pct >= 100 ? 'w-full' : 'w-3/4'}`} />
                 </div>
               </div>
             ))}

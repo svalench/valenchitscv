@@ -1,0 +1,7 @@
+---
+description: Заголовки секций llms.txt не брать из подписей навигации
+globs: src/llms.ts
+alwaysApply: false
+---
+
+Секции `llms.txt` (`## Writing`, `## Projects & Open Source`) — стабильный контракт. Не подставлять `translations.*.nav.*`: удлинение анкора в меню не должно переименовывать заголовок в llms.txt.

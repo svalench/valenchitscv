@@ -7,7 +7,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/ru/" element={<Home lang="ru" />} />
       <Route path="/be/" element={<Home lang="be" />} />
-      <Route path="*" element={<main><h1>404 — Page not found</h1><a href="/">Home</a></main>} />
+      <Route path="*" element={<main><h1>404 — Page not found</h1><a href="/">Back to the homepage</a></main>} />
     </Routes>
   )
 }

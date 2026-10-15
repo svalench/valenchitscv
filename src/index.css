@@ -138,6 +138,46 @@ body {
   mask-image: linear-gradient(to bottom, black 78%, transparent 99%);
 }
 
+/* Имя в две строки без вложенных тегов в h1: первая строка светлая, вторая акцентная. */
+.h1-name {
+  white-space: pre-line;
+  background-image: linear-gradient(180deg, #ffffff 0%, #ffffff 46%, #ff5a1f 62%, #ffb37a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-photo-scrim {
+  background: linear-gradient(to top, #0f0f12 0%, rgba(15, 15, 18, 0.5) 8%, transparent 22%);
+}
+
+.orb-tint-1 {
+  background: radial-gradient(circle, rgba(255, 90, 31, 0.16) 0%, rgba(255, 90, 31, 0) 65%);
+  filter: blur(30px);
+}
+.orb-tint-2 {
+  background: radial-gradient(circle, rgba(255, 140, 66, 0.11) 0%, rgba(255, 140, 66, 0) 65%);
+  filter: blur(40px);
+}
+.orb-tint-3 {
+  background: radial-gradient(circle, rgba(255, 90, 31, 0.09) 0%, rgba(255, 90, 31, 0) 65%);
+  filter: blur(36px);
+}
+
+.text-link {
+  color: #ffb37a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.text-link:hover {
+  color: #ff8c42;
+}
+
+.ym-pixel {
+  position: absolute;
+  left: -9999px;
+}
+
 .glow-orb {
   background: radial-gradient(circle, rgba(255, 90, 31, 0.28) 0%, rgba(255, 90, 31, 0) 65%);
   filter: blur(10px);
@@ -219,14 +259,25 @@ body {
 }
 
 section { scroll-margin-top: 100px; }
+
+/* Ниже первого экрана не участвует в первом кадре. */
+#about,
+#experience,
+#stack,
+#projects,
+#writing,
+#contact {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
 @media print {
   @page { size: A4; margin: 15mm; }
-  html, body, #root, #root * { background: transparent !important; color: #111 !important; box-shadow: none !important; text-shadow: none !important; animation: none !important; }
+  html, body, #root, #root * { background: transparent !important; color: #111 !important; box-shadow: none !important; text-shadow: none !important; animation: none !important; content-visibility: visible !important; }
   header, button, #root img, .glow-orb, .bg-orb, .bg-grid, .bg-aurora, #writing, #stack, #about, #top > div:last-child { display: none !important; }
   #root main, #root section, #root #top > div { padding: 0 !important; margin: 0 0 5mm !important; max-width: none !important; }
   #root .grid { display: block !important; }
-  #root h1 { font-size: 26pt !important; line-height: 1.2 !important; }
-  #root h1 br { display: none; }
+  #root h1 { font-size: 26pt !important; line-height: 1.2 !important; white-space: normal !important; background: none !important; color: #111 !important; -webkit-text-fill-color: #111 !important; }
   #root h2 { font-size: 17pt !important; }
   #root h3 { break-after: avoid; }
   #root p, #root li, #root a { font-size: 10pt !important; }

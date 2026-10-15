@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { useLang, langNames, type Lang } from '../i18n'
-import { languagePaths } from '../locales'
+import { useLang, type Lang } from '../i18n'
+import { langCodes, langSwitchLabel, languagePaths } from '../locales'
 
 const langs: Lang[] = ['be', 'en', 'ru']
 
@@ -27,6 +27,7 @@ export default function Header() {
               AV
             </span>
             <span className="font-display text-sm font-semibold tracking-wide text-white/90">valenchits</span>
+            <span className="sr-only">Back to the top of this page</span>
           </a>
 
           <nav className="hidden items-center gap-6 lg:flex">
@@ -51,7 +52,8 @@ export default function Header() {
                     lang === l ? 'accent-gradient text-black' : 'text-white/75 hover:text-white'
                   }`}
                 >
-                  {langNames[l]}
+                  <span className="sr-only">{langSwitchLabel[l]}</span>
+                  <span aria-hidden="true">{langCodes[l]}</span>
                 </a>
               ))}
             </div>
