@@ -111,7 +111,8 @@ function linkSections(includeFull: boolean): string[] {
       profileLinks.map((item) => linkLine(item.name, item.url, item.handle)),
     ),
     section(translations.en.nav.projects, projectLines()),
-    section(translations.en.nav.writing, articleLines()),
+    // Заголовок секции фиксированный: подпись в навигации сайта может быть длиннее.
+    section('Writing', articleLines()),
   ]
   if (optional.length > 0) sections.push(section('Optional', optional))
   return sections

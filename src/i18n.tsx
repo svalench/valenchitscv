@@ -65,18 +65,29 @@ export interface Translation {
     cta: string
     profilesLabel: string
   }
-  footer: { rights: string; built: string }
+  explore: {
+    lead: string
+    experience: string
+    afterExperience: string
+    stack: string
+    afterStack: string
+    projects: string
+    afterProjects: string
+    writing: string
+    tail: string
+  }
+  footer: { rights: string; built: string; also: string }
 }
 
 const en: Translation = {
-  nav: { about: 'About', experience: 'Experience', stack: 'Stack', projects: "Projects & Open Source", writing: 'Writing', contact: 'Contact' },
+  nav: { about: 'About me', experience: 'Work experience', stack: 'Tech stack', projects: "Projects & Open Source", writing: 'Technical writing', contact: 'Contact details' },
   hero: {
     badge: 'Open to work',
     role: 'Backend Tech Lead · AI Engineer · Open-Source Author',
     tagline: 'Python Django / FastAPI developer. I build backends and applied AI products with LLMs. Engineering since 2014; web development since 2021.',
     location: 'Minsk, Belarus · Open to relocation',
     ctaContact: 'Get in touch',
-    ctaGithub: 'GitHub',
+    ctaGithub: 'View GitHub profile',
   },
   stats: [
     { value: '12+', label: 'Years in engineering' },
@@ -197,18 +208,29 @@ const en: Translation = {
     cta: 'Write me on LinkedIn',
     profilesLabel: 'Find me on',
   },
-  footer: { rights: '© 2026 Alexander Valenchits', built: 'Tech Lead & AI Engineer' },
+  explore: {
+    lead: 'More context is in the ',
+    experience: 'work experience timeline',
+    afterExperience: ', the ',
+    stack: 'full tech stack',
+    afterStack: ', the ',
+    projects: 'open-source projects',
+    afterProjects: ', and the ',
+    writing: 'technical articles',
+    tail: '.',
+  },
+  footer: { rights: '© 2026 Alexander Valenchits', built: 'Tech Lead & AI Engineer', also: 'Also on this site' },
 }
 
 const ru: Translation = {
-  nav: { about: 'Обо мне', experience: 'Опыт', stack: 'Стек', projects: "Проекты и Open Source", writing: 'Статьи', contact: 'Контакты' },
+  nav: { about: 'Обо мне', experience: 'Опыт работы', stack: 'Технический стек', projects: "Проекты и Open Source", writing: 'Технические статьи', contact: 'Контактные данные' },
   hero: {
     badge: 'Открыт к предложениям',
     role: 'Backend Tech Lead · AI-инженер · автор open source',
     tagline: 'Python-разработчик Django/FastAPI, Минск. Разрабатываю backend и прикладные AI-продукты с LLM. В инженерии с 2014 года, в веб-разработке — с 2021.',
     location: 'Минск, Беларусь · Готов к релокации',
-    ctaContact: 'Связаться',
-    ctaGithub: 'GitHub',
+    ctaContact: 'Связаться со мной',
+    ctaGithub: 'Профиль на GitHub',
   },
   stats: [
     { value: '12+', label: 'лет в инженерии' },
@@ -329,18 +351,29 @@ const ru: Translation = {
     cta: 'Написать в LinkedIn',
     profilesLabel: 'Мои профили',
   },
-  footer: { rights: '© 2026 Alexander Valenchits', built: 'Tech Lead & AI Engineer' },
+  explore: {
+    lead: 'Дальше по странице: ',
+    experience: 'хронология опыта работы',
+    afterExperience: ', ',
+    stack: 'полный технический стек',
+    afterStack: ', ',
+    projects: 'open-source проекты',
+    afterProjects: ' и ',
+    writing: 'технические статьи',
+    tail: '.',
+  },
+  footer: { rights: '© 2026 Alexander Valenchits', built: 'Tech Lead & AI Engineer', also: 'Ещё на сайте' },
 }
 
 const be: Translation = {
-  nav: { about: 'Пра мяне', experience: 'Вопыт', stack: 'Стэк', projects: "Праекты і Open Source", writing: 'Артыкулы', contact: 'Кантакты' },
+  nav: { about: 'Пра мяне', experience: 'Вопыт працы', stack: 'Тэхнічны стэк', projects: "Праекты і Open Source", writing: 'Тэхнічныя артыкулы', contact: 'Кантактныя даныя' },
   hero: {
     badge: 'Адкрыты да прапаноў',
     role: 'Backend Tech Lead · AI-інжынер · аўтар open source',
     tagline: 'Python-распрацоўшчык Django/FastAPI, Мінск. Распрацоўваю backend і прыкладныя AI-прадукты з LLM. У інжынерыі з 2014 года, у вэб-распрацоўцы — з 2021.',
     location: 'Мінск, Беларусь · Гатовы да рэлакацыі',
-    ctaContact: 'Звязацца',
-    ctaGithub: 'GitHub',
+    ctaContact: 'Звязацца са мной',
+    ctaGithub: 'Профіль на GitHub',
   },
   stats: [
     { value: '12+', label: 'гадоў у інжынерыі' },
@@ -461,12 +494,21 @@ const be: Translation = {
     cta: 'Напісаць у LinkedIn',
     profilesLabel: 'Мае профілі',
   },
-  footer: { rights: '© 2026 Alexander Valenchits', built: 'Tech Lead & AI Engineer' },
+  explore: {
+    lead: 'Далей на старонцы: ',
+    experience: 'храналогія вопыту працы',
+    afterExperience: ', ',
+    stack: 'поўны тэхнічны стэк',
+    afterStack: ', ',
+    projects: 'open-source праекты',
+    afterProjects: ' і ',
+    writing: 'тэхнічныя артыкулы',
+    tail: '.',
+  },
+  footer: { rights: '© 2026 Alexander Valenchits', built: 'Tech Lead & AI Engineer', also: 'Яшчэ на сайце' },
 }
 
 export const translations: Record<Lang, Translation> = { en, ru, be }
-
-export const langNames: Record<Lang, string> = { en: 'EN', ru: 'RU', be: 'BE' }
 
 interface LangCtx {
   lang: Lang

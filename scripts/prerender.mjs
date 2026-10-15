@@ -14,7 +14,12 @@ const server = await createServer({ server: { middlewareMode: true }, appType: '
 try {
   const { render } = await server.ssrLoadModule('/src/prerender.tsx')
   const { buildLlmsTxt, buildLlmsFullTxt } = await server.ssrLoadModule('/src/llms.ts')
-  const template = await readFile('dist/index.html', 'utf8')
+  const built = await readFile('dist/index.html', 'utf8')
+  const cssHref = built.match(/<link rel="stylesheet"[^>]*href="([^"]+)"/)?.[1]
+  if (!cssHref) throw new Error('В dist/index.html нет link rel=stylesheet')
+  const css = (await readFile(`dist${cssHref}`, 'utf8')).replaceAll('</style', '<\\/style')
+  // Один файл CSS ~7 КБ gzip: инлайн убирает отдельный render-blocking запрос.
+  const template = built.replace(/<link rel="stylesheet"[^>]*>/, () => `<style>${css}</style>`)
   const pages = []
   for (const lang of langs) {
     const path = lang === 'en' ? '/' : `/${lang}/`
@@ -66,6 +71,7 @@ try {
       publisher: { '@id': `${base}/#person` },
     }
     const alternates = langs.filter((lang) => lang !== page.lang)
+    // x-default и en оба ведут на https://valenchits.dev/ — одна каноническая страница по умолчанию.
     const tags = `<link rel="canonical" href="${page.url}" />
       ${['en', 'ru', 'be', 'x-default'].map((lang) => `<link rel="alternate" hreflang="${lang}" href="${hreflangHref(lang)}" />`).join('\n')}
       <meta property="og:type" content="profile" />
@@ -78,11 +84,12 @@ try {
       <meta property="og:image" content="${base}/og.jpg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Alexander Valenchits" />
+      <meta property="og:image:alt" content="${escape(page.ogImageAlt)}" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="${escape(title)}" />
       <meta name="twitter:description" content="${escape(page.description)}" />
       <meta name="twitter:image" content="${base}/og.jpg" />
+      <meta name="twitter:image:alt" content="${escape(page.ogImageAlt)}" />
       <script type="application/ld+json">${jsonLd(schema)}</script>
       <script type="application/ld+json">${jsonLd(website)}</script>`
     const output = template
@@ -91,6 +98,7 @@ try {
       .replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${escape(page.description)}" />`)
       .replace('</head>', `${tags}</head>`)
       .replace('<div id="root"></div>', () => `<div id="root">${page.html}</div>`)
+      .replaceAll('fetchPriority=', 'fetchpriority=')
     await mkdir(`dist${page.path}`, { recursive: true })
     await writeFile(`dist${page.path}index.html`, output)
   }

@@ -1,6 +1,8 @@
 import { ArrowUpRight, Github, Linkedin, Globe, FileText, PenLine, Rocket } from 'lucide-react'
 import { useLang } from '../i18n'
+import { emphasisPhrases } from '../locales'
 import { links } from '../data'
+import Emphasize from '../emphasize'
 import SectionHead from './SectionHead'
 
 const profiles = [
@@ -22,7 +24,9 @@ export default function Contact() {
 
         <div className="relative">
           <SectionHead label={t.contact.label} heading={t.contact.heading} />
-          <p className="max-w-xl text-[15px] leading-relaxed text-white/75">{t.contact.text}</p>
+          <p className="max-w-xl text-[15px] leading-relaxed text-white/75">
+            <Emphasize text={t.contact.text} marks={emphasisPhrases[lang]} />
+          </p>
 
           <a
             href={links.linkedin}

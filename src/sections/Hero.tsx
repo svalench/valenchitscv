@@ -1,7 +1,8 @@
 import { ArrowUpRight, Github, MapPin } from 'lucide-react'
 import { useLang } from '../i18n'
-import { personNames } from '../locales'
+import { emphasisPhrases, imageAlts, personNames } from '../locales'
 import { links } from '../data'
+import Emphasize from '../emphasize'
 
 export default function Hero() {
   const { t, lang } = useLang()
@@ -21,13 +22,13 @@ export default function Hero() {
 
           <p className="reveal mb-3 font-mono2 text-sm tracking-wide text-[#ff5a1f]">{t.hero.role}</p>
 
-          <h1 className="reveal font-display text-[13vw] font-bold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-[72px]">
-            {personNames[lang].split(' ')[0]}{' '}
-            <br />
-            <span className="accent-text">{personNames[lang].split(' ').slice(1).join(' ')}</span>
+          <h1 className="reveal h1-name font-display text-[13vw] font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-[72px]">
+            {personNames[lang].replace(' ', '\n')}
           </h1>
 
-          <p className="reveal mt-6 max-w-xl text-[15px] leading-relaxed text-white/75">{t.hero.tagline}</p>
+          <p className="reveal mt-6 max-w-xl text-[15px] leading-relaxed text-white/75">
+            <Emphasize text={t.hero.tagline} marks={emphasisPhrases[lang]} />
+          </p>
 
           <div className="reveal mt-8 flex flex-wrap items-center gap-4">
             <a
@@ -72,15 +73,13 @@ export default function Hero() {
                 src="/img/hero.jpg"
                 width={1000}
                 height={1140}
+                loading="eager"
                 fetchPriority="high"
-                alt={personNames[lang]}
+                alt={imageAlts[lang].hero}
                 className="hero-img-mask h-[460px] w-full object-cover object-top lg:h-[560px]"
               />
             </picture>
-            <div
-              className="pointer-events-none absolute inset-0"
-              style={{ background: 'linear-gradient(to top, #0f0f12 0%, rgba(15,15,18,0.5) 8%, transparent 22%)' }}
-            />
+            <div className="hero-photo-scrim pointer-events-none absolute inset-0" />
           </div>
         </div>
       </div>

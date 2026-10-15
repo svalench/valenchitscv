@@ -17,7 +17,8 @@ for (const [lang, path, name] of [['en', '/', 'Alexander'], ['ru', '/ru/', 'Ал
   assert(html.includes(`<link rel="canonical" href="${base}${path}"`))
   assert.equal((html.match(/<h1\b/g) || []).length, 1)
   const h1 = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)[1]
-  const h1Text = h1.replace(/<br\s*\/?>/gi, '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
+  assert(!/</.test(h1), h1)
+  const h1Text = h1.replace(/\s+/g, ' ').trim()
   assert.equal(h1Text, fullNames[lang])
   assert(html.includes(name) && html.includes('EchoLang') && html.includes('fastapi-viewsets'))
   assert(!html.toLowerCase().includes(removedProduct))
@@ -30,6 +31,52 @@ for (const [lang, path, name] of [['en', '/', 'Alexander'], ['ru', '/ru/', 'Ал
   assert(html.includes('property="og:image:width" content="1200"'))
   assert(html.includes('property="og:image:height" content="630"'))
   assert(html.includes(`${base}/og.jpg`))
+  assert(html.includes('name="twitter:card" content="summary_large_image"'))
+  assert(html.includes('name="twitter:title"'))
+  assert(html.includes('name="twitter:description"'))
+  assert(html.includes(`name="twitter:image" content="${base}/og.jpg"`))
+  assert(html.includes('name="twitter:image:alt"'))
+  const shareAlt = {
+    en: 'Share card: Alexander Valenchits, Python backend tech lead and AI engineer',
+    ru: 'Карточка для соцсетей: Александр Валенчиц, Python backend tech lead и AI-инженер',
+    be: 'Картка для сацсетак: Аляксандр Валенчыц, Python backend tech lead і AI-інжынер',
+  }[lang]
+  const heroAlt = {
+    en: 'Selfie of Alexander Valenchits in sunglasses above the clouds',
+    ru: 'Селфи Александра Валенчица в солнцезащитных очках над облаками',
+    be: 'Сэлфі Аляксандра Валенчыца ў сонцаахоўных акулярах над аблокамі',
+  }[lang]
+  assert(html.includes(`content="${shareAlt}"`))
+  assert(html.includes(`alt="${heroAlt}"`))
+  assert(heroAlt !== h1Text)
+  assert(html.includes('loading="eager"'))
+  assert(html.includes('loading="lazy"'))
+  assert(html.includes('decoding="async"'))
+  assert(html.includes('fetchpriority="high"'))
+  assert(!html.includes('fetchPriority='))
+  assert(html.includes('width="1000"'))
+  assert(html.includes('width="900"'))
+  assert(html.includes('<strong>'))
+  assert(!html.includes('style='))
+  assert(html.includes('class="ym-pixel"'))
+  assert(html.includes('<style>'))
+  assert(!html.includes('rel="stylesheet"'))
+  assert(html.includes('font-display:swap') || html.includes('font-display: swap'))
+  assert(html.includes('rel="preconnect" href="https://www.googletagmanager.com"'))
+  assert(html.includes('rel="preconnect" href="https://mc.yandex.ru"'))
+  assert(html.includes('G-YJDQT6G7KG'))
+  assert(!html.includes('src="https://www.googletagmanager.com/gtag/js'))
+  assert(!html.includes('GTM-'))
+  assert(!/href="http:\/\//.test(html))
+  assert(html.includes(`<link rel="alternate" hreflang="x-default" href="${base}/" />`))
+  assert(html.includes(`<link rel="alternate" hreflang="en" href="${base}/" />`))
+  assert.equal((html.match(/hreflang="x-default"/g) || []).length, 1)
+  assert(html.includes('href="#experience"'))
+  assert(html.includes('href="#projects"'))
+  assert(html.includes('href="#writing"'))
+  if (lang !== 'en') assert(html.includes('English version of this page'))
+  if (lang !== 'ru') assert(html.includes('Русская версия этой страницы'))
+  if (lang !== 'be') assert(html.includes('Беларуская версія гэтай старонкі'))
   assert(html.includes('rel="manifest"'))
   assert(!html.includes('fonts.googleapis.com'))
   assert(html.includes('/img/hero-500.avif'))
@@ -94,7 +141,7 @@ assert(!`${llms}\n${llmsFull}\n${sitemap}`.toLowerCase().includes(removedProduct
 assert.equal((sitemap.match(/<loc>/g) || []).length, 3)
 assert(sitemap.includes('xmlns:xhtml="http://www.w3.org/1999/xhtml"'))
 assert(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/.test(sitemap))
-assert.equal((sitemap.match(/hreflang="x-default"/g) || []).length, 3)
+assert.equal((sitemap.match(/hreflang="x-default" href="https:\/\/valenchits\.dev\/"/g) || []).length, 3)
 assert((await readFile('dist/404.html', 'utf8')).includes('noindex'))
 for (const file of ['favicon.ico', 'favicon.svg', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'site.webmanifest', 'og.jpg']) {
   await access(`dist/${file}`)
