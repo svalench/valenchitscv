@@ -4,6 +4,8 @@ Personal portfolio: [valenchits.dev](https://valenchits.dev/).
 Python Backend Tech Lead and AI Engineer; projects include EchoLang,
 FastAPI ViewSets and Django Graph Search.
 
+
+
 React, TypeScript and Vite. English, Russian and Belarusian pages are
 rendered to static HTML at build time, then hydrated in the browser.
 
