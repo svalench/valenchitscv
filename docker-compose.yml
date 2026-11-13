@@ -1,4 +1,4 @@
-# Стек для Portainer: CV-сайт на хосте :8350.
+# Стек для Portainer: CV-сайт только на 127.0.0.1:8350 (не публикуем на 0.0.0.0 — иначе обход UFW).
 services:
   web:
     build:
@@ -7,7 +7,7 @@ services:
     image: valenchitscv:latest
     container_name: valenchitscv
     ports:
-      - "8350:80"
+      - "127.0.0.1:8350:80"
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://127.0.0.1/"]
